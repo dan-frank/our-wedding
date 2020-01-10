@@ -5,10 +5,27 @@
   margin: 0 auto
   width: $container-desktop
 
+.content-card-title-container
+  transform: translateY(50%)
+  position: relative
+  z-index: 10
+
+  .content-card-title
+    text-align: center
+    margin: 0
+    width: 100%
+
 .content-card
-  width: calc(#{$container-desktop} + 200px)
+  position: relative
+  z-index: 5
+
+  width: calc(#{$container-desktop} + (#{$card-padding} * 2))
   margin: 0 auto
   background: $white
+  padding-top: $card-padding
+  padding-bottom: $card-padding
+
+  position: relative
 
 .content-top
   background: $gradient-blue-pink
