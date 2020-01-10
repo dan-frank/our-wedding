@@ -1,0 +1,30 @@
+.button-line-white
+  transition: .2s
+
+  color: $white
+  text-decoration: none
+  position: relative
+
+  span
+    position: relative
+    z-index: 10
+
+  &:before
+    transition: .2s
+    content: ''
+
+    position: absolute
+    left: -10px
+    bottom: -10px
+    z-index: 5
+
+    display: block
+    width: calc(100% + 20px)
+    height: 1px
+    background: $white
+
+  &:hover
+    color: $black
+
+    &:before
+      height: calc(100% + 20px)

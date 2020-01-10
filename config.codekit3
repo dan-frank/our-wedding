@@ -100,6 +100,28 @@
 		"oAP": "/dist/favicon.ico",
 		"oF": 0
 		},
+	"/images/kiss-crop.png": {
+		"ft": 32768,
+		"iS": 0,
+		"oA": 0,
+		"oAP": "/dist/images/kiss-crop.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/images/kiss.jpg": {
+		"ft": 16384,
+		"iS": 4198680,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/dist/images/kiss.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
 	"/index.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -184,6 +206,19 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"/sass/parts/_banner.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 2,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dist/sass/parts/_banner.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/sass/parts/_nav.sass": {
 		"aP": 0,
 		"bl": 0,
@@ -193,6 +228,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/dist/sass/parts/_nav.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/sass/style/_buttons.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 2,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dist/sass/style/_buttons.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

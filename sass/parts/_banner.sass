@@ -1,0 +1,46 @@
+.banner-container
+  height: calc(100vh - #{$nav-height})
+
+  display: flex
+  justify-content: center
+  align-items: center
+
+  .banner-circle-container
+    width: calc(90vh - #{$nav-height})
+
+    .banner-circle
+      width: 100%
+      padding-top: 100%
+
+      border-radius: 100000px
+      background: $white
+
+      position: relative
+
+      .banner-image
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+
+
+        border-radius: inherit
+
+        overflow: hidden
+
+        img
+          width: 100%
+          height: auto
+
+      .banner-content
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
