@@ -144,6 +144,17 @@
 		"opt": 1,
 		"q": 100
 		},
+	"/images/stairs.jpg": {
+		"ft": 16384,
+		"iS": 4361042,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/dist/images/stairs.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
 	"/index.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -510,6 +521,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/dist/sass/parts/_happy-couple.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/sass/parts/_image-banner.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 2,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dist/sass/parts/_image-banner.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
