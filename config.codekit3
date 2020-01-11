@@ -567,6 +567,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/sass/parts/_footer.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 2,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dist/sass/parts/_footer.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/sass/parts/_happy-couple.sass": {
 		"aP": 0,
 		"bl": 0,
