@@ -1,5 +1,7 @@
 .button-line-white
-  transition: .2s
+  transition: $transition-100
+
+  display: inline-block
 
   color: $white
   text-decoration: none
@@ -10,7 +12,7 @@
     z-index: 10
 
   &:before
-    transition: .2s
+    transition: $transition-100
     content: ''
 
     position: absolute
@@ -28,3 +30,24 @@
 
     &:before
       height: calc(100% + 20px)
+
+.button-whole-pink
+  transition: $transition-100
+
+  display: inline-block
+
+  background: $pink-300
+  color: $white
+
+  text-decoration: none
+
+  padding: 10px 24px
+
+  &:after
+    content: '\f178'
+    font-family: 'Font Awesome 5 Pro'
+    font-weight: lighter
+    padding-left: 10px
+
+  &:hover
+    background: darken($pink-300, 10%)

@@ -1,0 +1,44 @@
+.happy-couple
+
+  .happy-person
+    display: flex
+    justify-content: center
+    align-items: center
+    position: relative
+
+    .happy-person-initials
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      z-index: 5
+
+      opacity: .2
+
+      p
+        padding: 0 1em
+
+    .happy-person-image
+      flex: 0 1 360px
+
+      position: relative
+      z-index: 10
+
+    .happy-person-name
+      position: relative
+      z-index: 10
+
+      .happy-person-title
+        position: relative
+
+        &:after
+          content: ''
+
+          width: 126px
+          height: 1px
+
+          position: absolute
+          left: 0
+          bottom: -6px
+
+          background: $black
