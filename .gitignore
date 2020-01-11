@@ -4,6 +4,10 @@
 ### Distribution
 dist/
 
+### Media
+images/
+videos/
+
 ### Sass template
 .sass-cache/
 *.css.map
