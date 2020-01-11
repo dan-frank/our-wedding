@@ -122,6 +122,50 @@
 		"opt": 1,
 		"q": 100
 		},
+	"/images/food1.jpg": {
+		"ft": 16384,
+		"iS": 157765,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/dist/images/food1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/images/food12.jpg": {
+		"ft": 16384,
+		"iS": 850953,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/dist/images/food12.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/images/group1.jpg": {
+		"ft": 16384,
+		"iS": 8156595,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/dist/images/group1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/images/group2.jpg": {
+		"ft": 16384,
+		"iS": 14799049,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/dist/images/group2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
 	"/images/kiss-crop.png": {
 		"ft": 32768,
 		"iS": 0,
@@ -150,6 +194,17 @@
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/dist/images/stairs.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/images/venue.jpg": {
+		"ft": 16384,
+		"iS": 345341,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/dist/images/venue.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
@@ -547,6 +602,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/dist/sass/parts/_nav.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/sass/parts/_page-links.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 2,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dist/sass/parts/_page-links.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
