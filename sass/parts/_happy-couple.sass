@@ -1,5 +1,4 @@
 .happy-couple
-
   .happy-person
     display: flex
     justify-content: center
@@ -42,3 +41,24 @@
           bottom: -6px
 
           background: $black
+
+  @media only screen and (max-width: $breakpoint-tablet)
+    .happy-person
+      .happy-person-image
+        flex-basis: 300px
+
+  @media only screen and (max-width: $breakpoint-mobile-sml)
+    .happy-person
+      flex-direction: column
+
+      .happy-person-initials
+        display: none
+
+      .happy-person-image
+        flex-basis: 70%
+        width: 70%
+        order: 0
+        margin-bottom: 12px
+
+      .happy-person-name
+        order: 10
