@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Gallery | Dan & Becca's Wedding</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Lora|Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Lora|Open+Sans:400,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="dist/main.css" type="text/css" />
 
 <!--    Favicon-->
@@ -25,7 +25,7 @@
 
             <ul class="nav-items">
                 <li class="nav-item font-sans-serif"><a href="/" class="nav-link font-dark">Home</a></li>
-                <li class="nav-item font-sans-serif"><a href="/gallery.html" class="nav-link font-dark">Gallery</a></li>
+                <li class="nav-item font-sans-serif"><a href="/gallery.html" class="nav-link active font-dark">Gallery</a></li>
                 <li class="nav-item font-sans-serif"><a href="/" class="nav-link font-dark">Guest List</a></li>
                 <li class="nav-item font-sans-serif"><a href="/" class="nav-link font-dark">The Venue</a></li>
                 <li class="nav-item font-sans-serif"><a href="/" class="nav-link font-dark">The Menu</a></li>
@@ -45,7 +45,9 @@
                     <div class="play-button popup-trigger" data-target="popup-video"></div>
 
                     <div class="banner-image">
-                        <img src="images/kiss-crop.png" />
+                        <div class="image-shape square">
+                            <img data-src="images/cheers.jpg" class="lazy" />
+                        </div>
                     </div>
 
                     <div class="banner-content">
@@ -59,180 +61,1097 @@
             </div>
         </div>
 
-<!--        Card Title-->
-        <div class="content-card-title-container">
-            <h2 class="font-serif-2 font-size-600 font-pink-200 content-card-title">The Happy Couple</h2>
-        </div>
-
 <!--        Top Card-->
         <div class="content-main content-card">
             <div class="container">
 
+<!--                Card Title-->
+                <div class="content-card-title-container">
+                    <h2 class="font-serif-2 font-size-600 font-pink-200 content-card-title">Our Video</h2>
+                </div>
+
+<!--                Video-->
+                <div class="image-shape rec-16-by-9">
+                    <video controls>
+                        <source src="videos/wedding.mp4" type="video/mp4">
+                        <source src="videos/wedding.webm" type="video/webm">
+                        <source src="videos/wedding.m4v" type="video/m4v">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+
+<!--                Spacer-->
+                <div class="spacer-200"></div>
+
+<!--                Card Title-->
+                <div class="content-card-title-container">
+                    <h2 class="font-serif-2 font-size-600 font-pink-200 content-card-title">Pre-Ceremony</h2>
+                </div>
+
+<!--                Gallery-->
+                <div class="gallery">
+                    <a class="image" href="images/gallery/1-pre-ceremony/100.jpeg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/1-pre-ceremony/100.jpeg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/1-pre-ceremony/200.jpeg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/1-pre-ceremony/200.jpeg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/1-pre-ceremony/300.jpeg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/1-pre-ceremony/300.jpeg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/1-pre-ceremony/400.JPG" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/1-pre-ceremony/400.JPG" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/1-pre-ceremony/500.jpg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/1-pre-ceremony/500.jpg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/1-pre-ceremony/600.jpeg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/1-pre-ceremony/600.jpeg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/1-pre-ceremony/700.JPG" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/1-pre-ceremony/700.JPG" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/1-pre-ceremony/800.jpeg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/1-pre-ceremony/800.jpeg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/1-pre-ceremony/900.jpg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/1-pre-ceremony/900.jpg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/1-pre-ceremony/1000.jpg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/1-pre-ceremony/1000.jpg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/1-pre-ceremony/1100.jpg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/1-pre-ceremony/1100.jpg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/1-pre-ceremony/1200.jpg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/1-pre-ceremony/1200.jpg" class="lazy" />
+                        </div>
+                    </a>
+                </div>
+
+<!--                Card Title-->
+                <div class="content-card-title-container">
+                    <h2 class="font-serif-2 font-size-600 font-pink-200 content-card-title">Ceremony</h2>
+                </div>
+
+<!--                Gallery-->
+                <div class="gallery">
+                    <a class="image" href="images/gallery/2-ceremony/100.JPG" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/2-ceremony/100.JPG" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/2-ceremony/200.JPG" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/2-ceremony/200.JPG" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/2-ceremony/300.JPG" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/2-ceremony/300.JPG" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/2-ceremony/400.JPG" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/2-ceremony/400.JPG" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/2-ceremony/500.jpeg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/2-ceremony/500.jpeg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/2-ceremony/600.jpg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/2-ceremony/600.jpg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/2-ceremony/700.jpg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/2-ceremony/700.jpg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/2-ceremony/800.jpg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/2-ceremony/800.jpg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/2-ceremony/900.jpeg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/2-ceremony/900.jpeg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/2-ceremony/1000.JPG" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/2-ceremony/1000.JPG" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/2-ceremony/1100.jpg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/2-ceremony/1100.jpg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/2-ceremony/1200.jpg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/2-ceremony/1200.jpg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/2-ceremony/1300.JPG" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/2-ceremony/1300.JPG" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/2-ceremony/1400.JPG" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/2-ceremony/1400.JPG" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/2-ceremony/1500.jpg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/2-ceremony/1500.JPG" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/2-ceremony/1600.jpg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/2-ceremony/1600.jpg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/2-ceremony/1700.JPG" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/2-ceremony/1700.JPG" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/2-ceremony/1800.JPG" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/2-ceremony/1800.JPG" class="lazy" />
+                        </div>
+                    </a>
+                </div>
+
+<!--                Card Title-->
+                <div class="content-card-title-container">
+                    <h2 class="font-serif-2 font-size-600 font-pink-200 content-card-title">Intermission</h2>
+                </div>
+
+<!--                Gallery-->
+                <div class="gallery">
+                    <a class="image" href="images/gallery/3-intermission/100.jpg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/3-intermission/100.jpg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/3-intermission/200.JPG" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/3-intermission/200.JPG" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/3-intermission/300.JPG" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/3-intermission/300.JPG" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/3-intermission/400.JPG" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/3-intermission/400.JPG" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/3-intermission/500.jpg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/3-intermission/500.jpg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/3-intermission/600.JPG" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/3-intermission/600.JPG" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/3-intermission/700.JPG" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/3-intermission/700.JPG" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/3-intermission/800.JPG" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/3-intermission/800.JPG" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/3-intermission/900.JPG" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/3-intermission/900.JPG" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/3-intermission/1000.JPG" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/3-intermission/1000.JPG" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/3-intermission/1100.jpg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/3-intermission/1100.jpg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/3-intermission/1200.JPG" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/3-intermission/1200.JPG" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/3-intermission/1300.JPG" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/3-intermission/1300.JPG" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/3-intermission/1400.JPG" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/3-intermission/1400.JPG" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/3-intermission/1500.JPG" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/3-intermission/1500.JPG" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/3-intermission/1600.jpg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/3-intermission/1600.jpg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/3-intermission/1700.jpg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/3-intermission/1700.jpg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/3-intermission/1800.JPG" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/3-intermission/1800.JPG" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/3-intermission/1900.JPG" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/3-intermission/1900.JPG" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/3-intermission/2000.JPG" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/3-intermission/2000.JPG" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/3-intermission/2100.jpg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/3-intermission/2100.jpg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/3-intermission/2200.jpg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/3-intermission/2200.jpg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/3-intermission/2300.JPG" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/3-intermission/2300.JPG" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/3-intermission/2400.JPG" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/3-intermission/2400.JPG" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/3-intermission/2500.JPG" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/3-intermission/2500.JPG" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/3-intermission/2600.JPG" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/3-intermission/2600.JPG" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/3-intermission/2700.JPG" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/3-intermission/2700.JPG" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/3-intermission/2800.JPG" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/3-intermission/2800.JPG" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/3-intermission/2900.JPG" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/3-intermission/2900.JPG" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/3-intermission/3000.JPG" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/3-intermission/3000.JPG" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/3-intermission/3100.JPG" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/3-intermission/3100.JPG" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/3-intermission/3200.JPG" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/3-intermission/3200.JPG" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/3-intermission/3300.JPG" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/3-intermission/3300.JPG" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/3-intermission/3400.JPG" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/3-intermission/3400.JPG" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/3-intermission/3500.JPG" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/3-intermission/3500.JPG" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/3-intermission/3600.JPG" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/3-intermission/3600.JPG" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/3-intermission/3700.JPG" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/3-intermission/3700.JPG" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/3-intermission/3800.JPG" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/3-intermission/3800.JPG" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/3-intermission/3900.JPG" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/3-intermission/3900.JPG" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/3-intermission/4000.JPG" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/3-intermission/4000.JPG" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/3-intermission/4100.jpg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/3-intermission/4100.jpg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/3-intermission/4200.JPG" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/3-intermission/4200.JPG" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/3-intermission/4300.JPG" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/3-intermission/4300.JPG" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/3-intermission/4400.jpg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/3-intermission/4400.jpg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/3-intermission/4500.JPG" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/3-intermission/4500.JPG" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/3-intermission/4600.jpg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/3-intermission/4600.JPG" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/3-intermission/4700.jpg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/3-intermission/4700.JPG" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/3-intermission/4800.JPG" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/3-intermission/4800.JPG" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/3-intermission/4900.JPG" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/3-intermission/4900.JPG" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/3-intermission/5000.JPG" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/3-intermission/5000.JPG" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/3-intermission/5100.JPG" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/3-intermission/5100.JPG" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/3-intermission/5200.jpg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/3-intermission/5200.jpg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/3-intermission/5300.JPG" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/3-intermission/5300.JPG" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/3-intermission/5400.JPG" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/3-intermission/5400.JPG" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/3-intermission/5500.JPG" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/3-intermission/5500.JPG" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/3-intermission/5600.jpeg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/3-intermission/5600.jpeg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/3-intermission/5700.JPG" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/3-intermission/5700.JPG" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/3-intermission/5800.JPG" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/3-intermission/5800.JPG" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/3-intermission/5900.JPG" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/3-intermission/5900.JPG" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/3-intermission/6000.JPG" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/3-intermission/6000.JPG" class="lazy" />
+                        </div>
+                    </a>
+                </div>
+
+<!--                Card Title-->
+                <div class="content-card-title-container">
+                    <h2 class="font-serif-2 font-size-600 font-pink-200 content-card-title">Wedding Breakfast</h2>
+                </div>
+
+<!--                Gallery-->
+                <div class="gallery">
+                    <a class="image" href="images/gallery/4-wedding-breakfast/100.jpeg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/4-wedding-breakfast/100.jpeg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/4-wedding-breakfast/200.jpg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/4-wedding-breakfast/200.jpg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/4-wedding-breakfast/300.jpg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/4-wedding-breakfast/300.jpg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/4-wedding-breakfast/400.jpg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/4-wedding-breakfast/400.jpg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/4-wedding-breakfast/500.jpg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/4-wedding-breakfast/500.jpg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/4-wedding-breakfast/600.jpg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/4-wedding-breakfast/600.jpg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/4-wedding-breakfast/700.jpg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/4-wedding-breakfast/700.jpg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/4-wedding-breakfast/800.jpg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/4-wedding-breakfast/800.jpg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/4-wedding-breakfast/900.jpeg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/4-wedding-breakfast/900.jpeg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/4-wedding-breakfast/1000.jpeg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/4-wedding-breakfast/1000.jpeg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/4-wedding-breakfast/1100.jpg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/4-wedding-breakfast/1100.jpg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/4-wedding-breakfast/1200.jpg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/4-wedding-breakfast/1200.jpg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/4-wedding-breakfast/1300.JPG" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/4-wedding-breakfast/1300.JPG" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/4-wedding-breakfast/1400.jpg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/4-wedding-breakfast/1400.jpg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/4-wedding-breakfast/1500.jpg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/4-wedding-breakfast/1500.jpg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/4-wedding-breakfast/1600.jpg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/4-wedding-breakfast/1600.jpg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/4-wedding-breakfast/1700.jpg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/4-wedding-breakfast/1700.jpg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/4-wedding-breakfast/1800.jpg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/4-wedding-breakfast/1800.jpg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/4-wedding-breakfast/1900.jpg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/4-wedding-breakfast/1900.jpg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/4-wedding-breakfast/2000.jpg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/4-wedding-breakfast/2000.jpg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/4-wedding-breakfast/2100.jpg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/4-wedding-breakfast/2100.jpg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/4-wedding-breakfast/2200.jpg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/4-wedding-breakfast/2200.jpg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/4-wedding-breakfast/2300.jpg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/4-wedding-breakfast/2300.jpg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/4-wedding-breakfast/2400.jpg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/4-wedding-breakfast/2400.jpg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/4-wedding-breakfast/2500.jpg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/4-wedding-breakfast/2500.jpg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/4-wedding-breakfast/2600.jpg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/4-wedding-breakfast/2600.jpg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/4-wedding-breakfast/2700.jpg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/4-wedding-breakfast/2700.jpg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/4-wedding-breakfast/2800.jpg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/4-wedding-breakfast/2800.jpg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/4-wedding-breakfast/2900.jpeg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/4-wedding-breakfast/2900.jpeg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/4-wedding-breakfast/3000.jpg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/4-wedding-breakfast/3000.jpg" class="lazy" />
+                        </div>
+                    </a>
+                </div>
+
+<!--                Card Title-->
+                <div class="content-card-title-container">
+                    <h2 class="font-serif-2 font-size-600 font-pink-200 content-card-title">Party</h2>
+                </div>
+
+<!--                Gallery-->
+                <div class="gallery">
+                    <a class="image" href="images/gallery/5-party/100.jpg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/5-party/100.jpg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/5-party/200.jpg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/5-party/200.jpg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/5-party/300.jpeg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/5-party/300.jpeg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/5-party/400.jpg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/5-party/400.jpg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/5-party/500.jpg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/5-party/500.jpg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/5-party/600.jpg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/5-party/600.jpg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/5-party/700.jpg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/5-party/700.jpg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/5-party/800.jpg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/5-party/800.jpg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/5-party/900.jpg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/5-party/900.jpg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/5-party/1000.jpg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/5-party/1000.jpg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/5-party/1100.jpg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/5-party/1100.jpg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/5-party/1200.JPG" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/5-party/1200.JPG" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/5-party/1300.jpg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/5-party/1300.jpg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/5-party/1400.jpg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/5-party/1400.jpg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/5-party/1500.jpeg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/5-party/1500.jpeg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/5-party/1600.JPG" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/5-party/1600.JPG" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/5-party/1700.jpg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/5-party/1700.jpg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/5-party/1800.JPG" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/5-party/1800.JPG" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/5-party/1900.JPG" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/5-party/1900.JPG" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/5-party/2000.JPG" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/5-party/2000.JPG" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/5-party/2100.JPG" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/5-party/2100.JPG" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/5-party/2200.JPG" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/5-party/2200.JPG" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/5-party/2300.JPG" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/5-party/2300.JPG" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/5-party/2350.jpg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/5-party/2350.jpg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/5-party/2400.jpg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/5-party/2400.jpg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/5-party/2500.jpg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/5-party/2500.jpg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/5-party/2600.jpg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/5-party/2600.jpg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/5-party/2650.jpg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/5-party/2650.jpg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/5-party/2700.jpg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/5-party/2700.jpg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/5-party/2800.jpg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/5-party/2800.jpg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/5-party/2900.jpg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/5-party/2900.jpg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/5-party/3000.jpg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/5-party/3000.jpg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/5-party/3100.JPG" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/5-party/3100.JPG" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/5-party/3200.jpg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/5-party/3200.jpg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/5-party/3300.jpg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/5-party/3300.jpg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/5-party/3400.jpeg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/5-party/3400.jpeg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/5-party/3500.jpg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/5-party/3500.jpg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/5-party/3600.jpg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/5-party/3600.jpg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/5-party/3700.jpg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/5-party/3700.jpg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/5-party/3800.jpeg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/5-party/3800.jpeg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/5-party/3900.JPG" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/5-party/3900.JPG" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/5-party/4000.JPG" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/5-party/4000.JPG" class="lazy" />
+                        </div>
+                    </a>
+                </div>
+
+<!--                Card Title-->
+                <div class="content-card-title-container">
+                    <h2 class="font-serif-2 font-size-600 font-pink-200 content-card-title">Next Day</h2>
+                </div>
+
+<!--                Gallery-->
+                <div class="gallery">
+                    <a class="image" href="images/gallery/6-next-day/100.JPG" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/6-next-day/100.JPG" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/6-next-day/200.jpg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/6-next-day/200.jpg" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/6-next-day/300.JPG" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/6-next-day/300.JPG" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/6-next-day/400.JPG" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/6-next-day/400.JPG" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/6-next-day/500.JPG" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/6-next-day/500.JPG" class="lazy" />
+                        </div>
+                    </a>
+
+                    <a class="image" href="images/gallery/6-next-day/600.jpg" data-lightbox="wedding">
+                        <div class="image-shape rec-3-by-4">
+                            <img data-src="images/gallery/6-next-day/600.jpg" class="lazy" />
+                        </div>
+                    </a>
+                </div>
+
 <!--                Spacer-->
                 <div class="spacer-300"></div>
 
-<!--                Happy Couple-->
-                <div class="happy-couple">
+                <div class="footer">
+                    <p class="font-sans-serif m-y-none">
+                        Designed and developed by Daniel Lucas
+                    </p>
 
-<!--                    Bride-->
-                    <div class="happy-person bride">
-                        <div class="happy-person-initials">
-                            <p class="font-size-700 font-pink-300 font-serif-2 m-none">BL</p>
-                        </div>
-
-                        <div class="happy-person-image m-r-md">
-                            <div class="image-shape rec-3-by-4">
-                                <img src="images/becca.jpg" />
-                            </div>
-                        </div>
-
-                        <div class="happy-person-name">
-                            <p class="font-sans-serif happy-person-title">The Bride</p>
-                            <h3 class="font-serif-1 font-size-600 m-y-sm">Becca Lucas</h3>
-                            <a href="/" class="button-whole-pink font-sans-serif">The Groom</a>
-                        </div>
-                    </div>
-
-<!--                    Spacer-->
-                    <div class="spacer-500"></div>
-
-<!--                    Groom-->
-                    <div class="happy-person groom">
-                        <div class="happy-person-initials">
-                            <p class="font-size-700 font-pink-300 font-serif-2 m-none">DL</p>
-                        </div>
-
-                        <div class="happy-person-name">
-                            <p class="font-sans-serif happy-person-title">The Groom</p>
-                            <h3 class="font-serif-1 font-size-600 m-y-sm">Daniel Lucas</h3>
-                            <a href="/" class="button-whole-pink font-sans-serif">The Gallery</a>
-                        </div>
-
-                        <div class="happy-person-image m-l-md">
-                            <div class="image-shape rec-3-by-4">
-                                <img src="images/dan.jpg" />
-                            </div>
-                        </div>
-                    </div>
-
+                    <p class="font-sans-serif m-y-none">
+                        Download from <a href="https://github.com/dan-frank/our_wedding" target="_blank" class="button-link"><i class="fab fa-github"></i> GitHub</a>
+                    </p>
                 </div>
-            </div>
-
         </div>
-    </div>
-
-<!--    Image Banner-->
-    <div class="image-banner">
-        <div class="image-shape rec-16-by-9">
-            <img src="images/stairs.jpg" />
-        </div>
-    </div>
-
-    <div class="content-bottom">
-
-<!--        Message-->
-        <div class="message">
-            <div class="container-message">
-                <div class="spacer-600"></div>
-
-                <h2 class="font-serif-1 font-size-500 font-light font-shadow font-center">We just want to thank everyone for coming and for supporting us for the start of our greatest adventure</h2>
-
-                <div class="spacer-600"></div>
-            </div>
-        </div>
-
-        <!--        Card Title-->
-        <div class="content-card-title-container">
-            <h2 class="font-serif-2 font-size-600 font-pink-200 content-card-title">Take a Second to Remember</h2>
-        </div>
-
-        <!--        Top Card-->
-        <div class="content-main content-card">
-            <div class="container">
-
-<!--                Spacer-->
-                <div class="spacer-300"></div>
-
-                <div class="page-links">
-
-                    <div class="page-link">
-                        <div class="image-shape rec-4-by-3">
-                            <img src="images/group1.jpg" />
-                        </div>
-                        <a class="content" href="/">
-                            <h2 class="font-serif-1 font-size-300 m-t-none m-b-sm">Our Gallery</h2>
-                            <div class="text">
-                                <p class="message font-sans-serif font-transform-none m-t-sm m-b-none">
-                                    A collection of our favourite images from the morning all the way through to the embarrassing evening.
-                                </p>
-                                <i class="fal fa-long-arrow-right font-size-350"></i>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="page-link">
-                        <div class="image-shape rec-4-by-3">
-                            <img src="images/venue.jpg" />
-                        </div>
-                        <a class="content" href="/">
-                            <h2 class="font-serif-1 font-size-300 m-t-none m-b-sm">The Venue</h2>
-                            <div class="text">
-                                <p class="message font-sans-serif font-transform-none m-t-sm m-b-none">
-                                    Walk through the halls once again. Remind yourself of the castle that has stood tall and strong for over 800 years.
-                                </p>
-                                <i class="fal fa-long-arrow-right font-size-350"></i>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="page-link">
-                        <div class="image-shape rec-4-by-3">
-                            <img src="images/food1.jpg" />
-                        </div>
-                        <a class="content" href="/">
-                            <h2 class="font-serif-1 font-size-300 m-t-none m-b-sm">The Menu</h2>
-                            <div class="text">
-                                <p class="message font-sans-serif font-transform-none m-t-sm m-b-none">
-                                    Some wonderful food was served on our special day. If you’re thinking of recreating it at home, this is what you ate.
-                                </p>
-                                <i class="fal fa-long-arrow-right font-size-350"></i>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="page-link">
-                        <div class="image-shape rec-4-by-3">
-                            <img src="images/group2.jpg" />
-                        </div>
-                        <a class="content" href="/">
-                            <h2 class="font-serif-1 font-size-300 m-t-none m-b-sm">The Guest List</h2>
-                            <div class="text">
-                                <p class="message font-sans-serif font-transform-none m-t-sm m-b-none">
-                                    Made a once in a lifetime friend but forgot their name because you had too much to drink?
-                                </p>
-                                <i class="fal fa-long-arrow-right font-size-350"></i>
-                            </div>
-                        </a>
-                    </div>
-
-<!--                Spacer-->
-                    <div class="spacer-300"></div>
-
-                    <div class="footer">
-                        <p class="font-sans-serif m-y-none">
-                            Designed and developed by Daniel Lucas
-                        </p>
-
-                        <p class="font-sans-serif m-y-none">
-                            Download from <a href="https://github.com/dan-frank/our_wedding" target="_blank" class="button-link"><i class="fab fa-github"></i> GitHub</a>
-                        </p>
-                    </div>
-
-                </div>
-
-            </div>
-        </div>
-
     </div>
 
 </div>
