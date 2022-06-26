@@ -3,37 +3,37 @@
   width: 100%;
 }
 
-.nav .nav-content {
+.nav__content {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: var(--nav-height);
 }
 
-.nav .nav-content .logo {
+.nav__logo {
   font-size: var(--font-size-400);
   margin: 0;
 }
 
-.nav .nav-content .logo .nav-link {
+.nav__logo .nav__link {
   text-decoration: none;
 }
 
-.nav .nav-content .nav-items {
+.nav__items {
   display: flex;
   flex-direction: row;
   margin: 0;
 }
 
-.nav .nav-content .nav-items .nav-item {
+.nav__item {
   list-style-type: none;
   margin-right: 40px;
 }
 
-.nav .nav-content .nav-items .nav-item .nav-link {
+.nav__link {
   text-decoration: none;
 }
 
-.nav .nav-content .nav-items .nav-item .nav-link.active {
+.nav__link.nav__link--active {
   font-weight: bold;
 }
