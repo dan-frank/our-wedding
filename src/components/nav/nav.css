@@ -1,0 +1,39 @@
+.nav {
+  background: #fff;
+  width: 100%;
+}
+
+.nav__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: var(--nav-height);
+}
+
+.nav__logo {
+  font-size: var(--font-size-400);
+  margin: 0;
+}
+
+.nav__logo .nav__link {
+  text-decoration: none;
+}
+
+.nav__items {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+}
+
+.nav__item {
+  list-style-type: none;
+  margin-right: 40px;
+}
+
+.nav__link {
+  text-decoration: none;
+}
+
+.nav__link.nav__link--active {
+  font-weight: bold;
+}
