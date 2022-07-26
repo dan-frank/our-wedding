@@ -243,3 +243,89 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.font-serif-1 {
+  font-family: var(--font-serif-1);
+  margin: 0;
+}
+
+.font-serif-2 {
+  font-family: var(--font-serif-2);
+  margin: 0;
+}
+
+.font-sans-serif {
+  font-family: var(--font-sans-serif);
+  margin: 0;
+  letter-spacing: 2.08px;
+  text-transform: uppercase;
+}
+
+.font-size-100 {
+  font-size: var(--font-size-100);
+}
+
+.font-size-200 {
+  font-size: var(--font-size-200);
+}
+
+.font-size-300 {
+  font-size: var(--font-size-300);
+}
+
+.font-size-350 {
+  font-size: var(--font-size-350);
+}
+
+.font-size-400 {
+  font-size: var(--font-size-400);
+}
+
+.font-size-500 {
+  font-size: var(--font-size-500);
+}
+
+.font-size-600 {
+  font-size: var(--font-size-600);
+}
+
+.font-size-700 {
+  font-size: var(--font-size-700);
+}
+
+body, h1, h2, h3, h4, h5, p {
+  font-family: var(--font-sans-serif);
+}
+
+body, p {
+  font-size: var(--font-size-100);
+}
+
+.font-light {
+  color: var(--color-light-background);
+
+}
+
+.font-dark {
+  color:var(--color-dark-backround);
+}
+
+.font-pink-200 {
+  color: var(--color-pink-200);
+}
+
+.font-pink-300 {
+  color: var(--color-pink-300);
+}
+
+.font-shadow{
+  text-shadow: 0 2px 4px rgba(0,0,0,.16);
+}
+
+.font-center {
+  text-align: center;
+}
+
+.font-transform-none {
+  text-transform: none;
+}
