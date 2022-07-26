@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root {
+  /*
+   * Colours
+   */
+  --color-greyscale-50: #ffffffff;
+  --color-greyscale-100: #e5e5eaff;
+  --color-greyscale-200: #d1d1d6ff;
+  --color-greyscale-300: #c7c7ccff;
+  --color-greyscale-400: #aeaeb2ff;
+  --color-greyscale-500: #8e8e93ff;
+  --color-greyscale-600: #8e8e93ff;
+  --color-greyscale-700: #636366ff;
+  --color-greyscale-800: #48484aff;
+  --color-greyscale-800-rgb: 0, 0, 0;
+  --color-greyscale-900: #3a3a3cff;
+  --color-greyscale-900-rgb: 31, 41, 51;
+  --color-greyscale-950: #2c2c2eff;
+  --color-greyscale-1000: #1c1c1eff;
+  --color-greyscale-1000-rgb: 28, 28, 30;
+  --color-greyscale-1100: #131314ff;
+  --color-greyscale-1200: #000316ff;
+
+  --color-beige-200: #f1e8d9;
+
+  --color-blue-100: #b9d6f3;
+  --color-blue-200: #a1c9f1;
+  --color-blue-300: #007affff;
+  --color-blue-400: #0a84ffff;
+  --color-blue-500: #052d61ff;
+  --color-blue-600: #031226ff;
+
+  --color-green-300: #34c759ff;
+  --color-green-400: #30d158ff;
+
+  --color-indigo-300: #5856d6ff;
+  --color-indigo-400: #5e5ce6ff;
+
+  --color-orange-300: #ff9500ff;
+  --color-orange-400: #ff9f0aff;
+
+  --color-pink-100: #f8dae9;
+  --color-pink-200: #f4c2d7;
+  --color-pink-300: #efb0c9;
+  --color-pink-400: #e1daf8;
+
+  --color-purple-300: #af52deff;
+  --color-purple-400: #bf5af2ff;
+
+  --color-red-300: #ff3b30ff;
+  --color-red-400: #ff453aff;
+
+  --color-teal-300: #5ac8faff;
+  --color-teal-400: #64d2ffff;
+
+  --color-yellow-300: #ffcc00ff;
+  --color-yellow-400: #ffd60aff;
+
+  --color-dark-text: var(--color-greyscale-50);
+  --color-dark-backround: var(--color-greyscale-1000);
+  --color-dark-backround-rgb: var(--color-greyscale-1000-rgb);
+
+  /*
+   * Access colours
+   */
+  --color-primary-background: var(--color-blue-300);
+  --color-primary-hover: var(--color-blue-400);
+  --color-primary-text: var(--color-greyscale-50);
+
+  --color-tinted-background: var(--color-blue-600);
+  --color-tinted-hover: var(--color-blue-500);
+  --color-tinted-text: var(--color-blue-300);
+
+  --color-grey-background: var(--color-greyscale-1100);
+  --color-grey-hover: var(--color-greyscale-900);
+  --color-grey-text: var(--color-blue-300);
+
+  --color-dark-background: var(--color-greyscale-1200);
+  --color-dark-hover: var(--color-greyscale-1000);
+  --color-dark-text: var(--color-blue-300);
+
+  --color-light-background: var(--color-greyscale-100);
+  --color-light-hover: var(--color-greyscale-300);
+  --color-light-text: var(--color-blue-300);
+
+  --color-confirm-background: var(--color-green-300);
+  --color-confirm-hover: var(--color-green-400);
+  --color-confirm-text: var(--color-greyscale-50);
+
+  --color-warning-background: var(--color-yellow-300);
+  --color-warning-hover: var(--color-yellow-400);
+  --color-warning-text: var(--color-greyscale-800);
+
+  --color-danger-background: var(--color-red-300);
+  --color-danger-hover: var(--color-red-400);
+  --color-danger-text: var(--color-greyscale-50);
+
+  --color-help-background: var(--color-purple-300);
+  --color-help-hover: var(--color-purple-400);
+  --color-help-text: var(--color-greyscale-50);
+
+  --gradient-blue-pink: linear-gradient(
+    180deg,
+    var(--blue-100) 0%,
+    var(--pink-400) 100%
+  );
+  --gradient-pink-blue: linear-gradient(
+    0,
+    var(--blue-100) 0%,
+    var(--pink-400) 100%
+  );
+
+  /*
+   * Radius
+   */
+  --radius-small: 4px;
+  --radius: 8px;
+  --radius-large: 12px;
+  --radius-rounded: 99999999px;
+
+  /*
+   * Aspect
+   */
+  --aspect-16by9: 56.25%;
+  --aspect-4by3: 75%;
+  --aspect-3by2: 66.66%;
+  --aspect-8by5: 62.5%;
+
+  /*
+   * Fonts
+   */
+  --font-serif-1: "Lora", serif;
+  --font-serif-2: "Great Vibes", serif;
+  --font-sans-serif: "Open Sans", sans-serif;
+
+  --font-size-100: 11px;
+  --font-size-200: 14px;
+  --font-size-250: 20px;
+  --font-size-300: 24px;
+  --font-size-350: 30px;
+  --font-size-400: 36px;
+  --font-size-500: 58px;
+  --font-size-600: 68px;
+  --font-size-700: 300px;
+
+  /* TODO - Replace these with media queries on previously defined font size vars */
+  --font-size-100-sm: 10px;
+  --font-size-200-sm: 12px;
+  --font-size-250-sm: 20px;
+  --font-size-300-sm: 14px;
+  --font-size-350-sm: 20px;
+  --font-size-400-sm: 24px;
+  --font-size-500-sm: 36px;
+  --font-size-600-sm: 42px;
+  --font-size-700-sm: 150px;
+
+  --font-size-100-md: 10px;
+  --font-size-200-md: 12px;
+  --font-size-250-md: 20px;
+  --font-size-300-md: 20px;
+  --font-size-350-md: 24px;
+  --font-size-400-md: 30px;
+  --font-size-500-md: 46px;
+  --font-size-600-md: 58px;
+  --font-size-700-md: 200px;
+
+  --font-size-100-xl: 10px;
+  --font-size-200-xl: 12px;
+  --font-size-250-xl: 20px;
+  --font-size-300-xl: 14px;
+  --font-size-350-xl: 28px;
+  --font-size-400-xl: 22px;
+  --font-size-500-xl: 32px;
+  --font-size-600-xl: 38px;
+  --font-size-700-xl: 90px;
+
+  /*
+   * Nav
+   */
+  --nav-height: 80px;
+
+  /*
+   * Container
+   */
+  --container-desktop: 950px;
+  --container-desktop-mobile: 85%;
+
+  --container-message: 800px;
+  --container-message-tablet: 70%;
+
+  --card-padding: 70px;
+  --card-padding-tablet: 50px;
+
+  /*
+   * Transition
+   */
+  --transition-100: 0.2s;
+
+  /*
+   * Margin
+   */
+
+  --margin-100: 10px;
+  --margin-300: 40px;
+
+  /*
+   * Spacer
+   */
+  --spacer-200: 60px;
+  --spacer-300: 80px;
+  --spacer-500: 160px;
+  --spacer-600: 200px;
+
+  --spacer-200-md: 30px;
+  --spacer-300-md: 55px;
+  --spacer-500-md: 80px;
+  --spacer-600-md: 120px;
+
+  --spacer-200-sm: 15px;
+  --spacer-300-sm: 20px;
+  --spacer-500-sm: 40px;
+  --spacer-600-sm: 80px;
+
+  /*
+   * Media Queries
+   */
+  --breakpoint-tablet: 1200px;
+  --breakpoint-mobile: 900px;
+  --breakpoint-mobile-md: 767px;
+  --breakpoint-mobile-sml: 584px;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--color-light-background);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.font-serif-1 {
+  font-family: var(--font-serif-1);
+  margin: 0;
+}
+
+.font-serif-2 {
+  font-family: var(--font-serif-2);
+  margin: 0;
+}
+
+.font-sans-serif {
+  font-family: var(--font-sans-serif);
+  margin: 0;
+  letter-spacing: 2.08px;
+  text-transform: uppercase;
+}
+
+.font-size-100 {
+  font-size: var(--font-size-100);
+}
+
+.font-size-200 {
+  font-size: var(--font-size-200);
+}
+
+.font-size-300 {
+  font-size: var(--font-size-300);
+}
+
+.font-size-350 {
+  font-size: var(--font-size-350);
+}
+
+.font-size-400 {
+  font-size: var(--font-size-400);
+}
+
+.font-size-500 {
+  font-size: var(--font-size-500);
+}
+
+.font-size-600 {
+  font-size: var(--font-size-600);
+}
+
+.font-size-700 {
+  font-size: var(--font-size-700);
+}
+
+body, h1, h2, h3, h4, h5, p {
+  font-family: var(--font-sans-serif);
+}
+
+body, p {
+  font-size: var(--font-size-100);
+}
+
+.font-light {
+  color: var(--color-light-background);
+
+}
+
+.font-dark {
+  color:var(--color-dark-backround);
+}
+
+.font-pink-200 {
+  color: var(--color-pink-200);
+}
+
+.font-pink-300 {
+  color: var(--color-pink-300);
+}
+
+.font-shadow{
+  text-shadow: 0 2px 4px rgba(0,0,0,.16);
+}
+
+.font-center {
+  text-align: center;
+}
+
+.font-transform-none {
+  text-transform: none;
+}
