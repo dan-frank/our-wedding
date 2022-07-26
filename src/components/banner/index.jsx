@@ -1,5 +1,8 @@
 import React from "react";
+
 import "./banner.css";
+
+import { BsPlayFill } from 'react-icons/bs';
 
 function Banner() {
   return (
@@ -9,7 +12,9 @@ function Banner() {
           <div
             class="play-button popup-trigger"
             data-target="popup-video"
-          ></div>
+          >
+            <BsPlayFill />
+          </div>
 
           <div class="banner-image">
             <div class="image-shape square">
