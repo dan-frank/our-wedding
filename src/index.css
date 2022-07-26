@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
 :root {
   /*
    * Colours
@@ -132,8 +134,9 @@
   --font-serif-2: "Great Vibes", serif;
   --font-sans-serif: "Open Sans", sans-serif;
 
-  --font-size-100: 10px;
-  --font-size-200: 12px;
+  --font-size-100: 11px;
+  --font-size-200: 14px;
+  --font-size-250: 20px;
   --font-size-300: 24px;
   --font-size-350: 30px;
   --font-size-400: 36px;
@@ -142,17 +145,9 @@
   --font-size-700: 300px;
 
   /* TODO - Replace these with media queries on previously defined font size vars */
-  --font-size-100-md: 10px;
-  --font-size-200-md: 12px;
-  --font-size-300-md: 20px;
-  --font-size-350-md: 24px;
-  --font-size-400-md: 30px;
-  --font-size-500-md: 46px;
-  --font-size-600-md: 58px;
-  --font-size-700-md: 200px;
-
   --font-size-100-sm: 10px;
   --font-size-200-sm: 12px;
+  --font-size-250-sm: 20px;
   --font-size-300-sm: 14px;
   --font-size-350-sm: 20px;
   --font-size-400-sm: 24px;
@@ -160,8 +155,19 @@
   --font-size-600-sm: 42px;
   --font-size-700-sm: 150px;
 
+  --font-size-100-md: 10px;
+  --font-size-200-md: 12px;
+  --font-size-250-md: 20px;
+  --font-size-300-md: 20px;
+  --font-size-350-md: 24px;
+  --font-size-400-md: 30px;
+  --font-size-500-md: 46px;
+  --font-size-600-md: 58px;
+  --font-size-700-md: 200px;
+
   --font-size-100-xl: 10px;
   --font-size-200-xl: 12px;
+  --font-size-250-xl: 20px;
   --font-size-300-xl: 14px;
   --font-size-350-xl: 28px;
   --font-size-400-xl: 22px;
@@ -238,4 +244,90 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.font-serif-1 {
+  font-family: var(--font-serif-1);
+  margin: 0;
+}
+
+.font-serif-2 {
+  font-family: var(--font-serif-2);
+  margin: 0;
+}
+
+.font-sans-serif {
+  font-family: var(--font-sans-serif);
+  margin: 0;
+  letter-spacing: 2.08px;
+  text-transform: uppercase;
+}
+
+.font-size-100 {
+  font-size: var(--font-size-100);
+}
+
+.font-size-200 {
+  font-size: var(--font-size-200);
+}
+
+.font-size-300 {
+  font-size: var(--font-size-300);
+}
+
+.font-size-350 {
+  font-size: var(--font-size-350);
+}
+
+.font-size-400 {
+  font-size: var(--font-size-400);
+}
+
+.font-size-500 {
+  font-size: var(--font-size-500);
+}
+
+.font-size-600 {
+  font-size: var(--font-size-600);
+}
+
+.font-size-700 {
+  font-size: var(--font-size-700);
+}
+
+body, h1, h2, h3, h4, h5, p {
+  font-family: var(--font-sans-serif);
+}
+
+body, p {
+  font-size: var(--font-size-100);
+}
+
+.font-light {
+  color: var(--color-light-background);
+
+}
+
+.font-dark {
+  color:var(--color-dark-backround);
+}
+
+.font-pink-200 {
+  color: var(--color-pink-200);
+}
+
+.font-pink-300 {
+  color: var(--color-pink-300);
+}
+
+.font-shadow{
+  text-shadow: 0 2px 4px rgba(0,0,0,.16);
+}
+
+.font-center {
+  text-align: center;
+}
+
+.font-transform-none {
+  text-transform: none;
 }
