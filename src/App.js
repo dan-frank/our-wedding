@@ -12,6 +12,7 @@ import ImageBanner from "./components/banner/image";
 import Message from "./components/message";
 import Cards from "./components/cards";
 import Footer from "./components/footer";
+import Button from "./components/button";
 
 function App() {
   return (
@@ -35,9 +36,11 @@ function App() {
                     title="bride"
                     name="Becca Lucas"
                     button={
-                      <a href="/" class="button-whole-pink font-sans-serif">
-                        The Groom
-                      </a>
+                      <Button
+                        text="The Groom"
+                        url="/"
+                        modifiers="button button--secondary"
+                      />
                     }
                   />
                   <Spacer size={500} />

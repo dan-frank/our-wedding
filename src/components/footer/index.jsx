@@ -1,6 +1,7 @@
 import React from "react";
 import "./footer.css";
 
+import Button from "../button";
 import { BsGithub } from "react-icons/bs";
 
 const Footer = () => {
@@ -12,14 +13,16 @@ const Footer = () => {
 
       <p class="font-sans-serif m-y-none">
         Download website from{" "}
-        <a
-          href="https://github.com/dan-frank/our_wedding"
-          target="_blank"
-          rel="noreferrer"
-          class="button-link"
-        >
-          <BsGithub /> GitHub
-        </a>
+        <Button
+          text={
+            <>
+              <BsGithub /> GitHub
+            </>
+          }
+          url="https://github.com/dan-frank/our_wedding"
+          modifiers="button button--link"
+          blank={true}
+        />
       </p>
     </div>
   );

@@ -1,6 +1,7 @@
 import React from "react";
 import "./banner.css";
 
+import Button from "../button";
 import { BsPlayFill } from "react-icons/bs";
 
 const Banner = () => {
@@ -26,9 +27,11 @@ const Banner = () => {
               The Perfect Day
             </h1>
             <p class="font-sans-serif">
-              <a href="/" class="button-line-white">
-                <span>Join Us As We Remember Our Special Day</span>
-              </a>
+              <Button
+                text={<span>Join Us As We Remember Our Special Day</span>}
+                url="/"
+                modifiers="button button--white button--line"
+              />
             </p>
           </div>
         </div>
