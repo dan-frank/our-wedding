@@ -60,7 +60,12 @@ function App() {
         />
 
         <div class="content-bottom">
-          <Message message="We just want to thank everyone for coming and for supporting us for the start of our greatest adventure" />
+          <Message
+            message={
+              "We just want to thank everyone for coming and for supporting us for the " +
+              "start of our greatest adventure"
+            }
+          />
 
           {/* <!--        Card Title--> */}
           <div class="content-card-title-container">
