@@ -9,6 +9,7 @@ import ContentCard from "./components/content/content-card";
 import Spacer from "./components/spacer";
 import CoupleHighlight from "./components/couple-highlight";
 import ImageBanner from "./components/banner/image";
+import Message from "./components/message";
 
 function App() {
   return (
@@ -59,19 +60,7 @@ function App() {
         />
 
         <div class="content-bottom">
-          {/* <!--        Message--> */}
-          <div class="message">
-            <div class="container-message">
-              <Spacer size={600} />
-
-              <h2 class="font-serif-1 font-size-500 font-light font-shadow font-center">
-                We just want to thank everyone for coming and for supporting us
-                for the start of our greatest adventure
-              </h2>
-
-              <Spacer size={600} />
-            </div>
-          </div>
+          <Message message="We just want to thank everyone for coming and for supporting us for the start of our greatest adventure" />
 
           {/* <!--        Card Title--> */}
           <div class="content-card-title-container">
