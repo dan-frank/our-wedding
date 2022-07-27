@@ -64,9 +64,17 @@
   --color-primary-hover: var(--color-blue-400);
   --color-primary-text: var(--color-greyscale-50);
 
-  --color-tinted-background: var(--color-blue-600);
-  --color-tinted-hover: var(--color-blue-500);
-  --color-tinted-text: var(--color-blue-300);
+  --color-secondary-background: var(--color-pink-300);
+  --color-secondary-hover: var(--color-pink-400);
+  --color-secondary-text: var(--color-greyscale-50);
+
+  --color-white-background: var(--color-greyscale-50);
+  --color-white-hover: var(--color-greyscale-100);
+  --color-white-text: var(--color-blue-300);
+
+  --color-light-background: var(--color-greyscale-100);
+  --color-light-hover: var(--color-greyscale-300);
+  --color-light-text: var(--color-blue-300);
 
   --color-grey-background: var(--color-greyscale-1100);
   --color-grey-hover: var(--color-greyscale-900);
@@ -75,14 +83,6 @@
   --color-dark-background: var(--color-greyscale-1200);
   --color-dark-hover: var(--color-greyscale-1000);
   --color-dark-text: var(--color-blue-300);
-
-  --color-light-background: var(--color-greyscale-100);
-  --color-light-hover: var(--color-greyscale-300);
-  --color-light-text: var(--color-blue-300);
-
-  --color-white-background: var(--color-greyscale-50);
-  --color-white-hover: var(--color-greyscale-100);
-  --color-white-text: var(--color-blue-300);
 
   --color-confirm-background: var(--color-green-300);
   --color-confirm-hover: var(--color-green-400);
