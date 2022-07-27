@@ -4,8 +4,9 @@ import "./banner.css";
 import Button from "../button";
 import { BsPlayFill } from "react-icons/bs";
 import PopupWeddingVideo from "../popup/wedding-video";
+import Image from "../image";
 
-const Banner = () => {
+const Banner = ({ image, title }) => {
   const [showPopup, setShowPopup] = useState(false);
 
   const openPopup = () => {
@@ -26,9 +27,7 @@ const Banner = () => {
           {showPopup ? <PopupWeddingVideo setShowPopup={setShowPopup} /> : null}
 
           <div class="banner-image">
-            <div class="image-shape square">
-              <img src="./images/kiss-small.jpg" alt="bride and groom kiss" />
-            </div>
+            <Image url={image.url} alt={image.alt} size="is-square" />
           </div>
 
           <div class="banner-content">
@@ -36,7 +35,7 @@ const Banner = () => {
               Our Wedding
             </h2>
             <h1 class="font-serif-1 font-light font-size-600 font-light m-y-sm">
-              The Perfect Day
+              {title}
             </h1>
             <p class="font-sans-serif">
               <Button

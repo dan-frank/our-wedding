@@ -1,5 +1,4 @@
 import React from "react";
-import "normalize.css";
 
 import Button from "../components/button";
 import Banner from "../components/banner";
@@ -15,14 +14,20 @@ import Spacer from "../components/spacer";
 
 const HomeRoute = () => {
   return (
-    <div class="main">
+    <>
       <Nav />
 
       <Content
         position="top"
         children={
           <>
-            <Banner />
+            <Banner
+              image={{
+                url: "/images/kiss-small.jpg",
+                alt: "Bride and groom kiss",
+              }}
+              title="The Perfect Day"
+            />
             <Spacer size={200} />
             <ContentCard
               title="The Happy Couple"
@@ -138,7 +143,7 @@ const HomeRoute = () => {
           </>
         }
       />
-    </div>
+    </>
   );
 };
 

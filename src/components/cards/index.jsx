@@ -7,13 +7,12 @@ const Cards = ({ size, cards }) => {
   return (
     <div className="cards">
       {cards.map((card, index) => {
-        let newImage = card.image;
-        newImage.size = size;
+        card.image.size = size;
 
         return (
           <Card
             key={index}
-            image={newImage}
+            image={card.image}
             title={card.title}
             text={card.text}
             url={card.url}
