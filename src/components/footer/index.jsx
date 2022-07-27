@@ -11,7 +11,7 @@ const Footer = () => {
       </p>
 
       <p class="font-sans-serif m-y-none">
-        Download from{" "}
+        Download website from{" "}
         <a
           href="https://github.com/dan-frank/our_wedding"
           target="_blank"
