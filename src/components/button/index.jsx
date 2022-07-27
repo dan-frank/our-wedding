@@ -1,16 +1,16 @@
 import React from "react";
 import "./button.css";
 
-const Button = ({ text, url, style }) => {
+const Button = ({ text, url, modifiers }) => {
   if (url) {
     return (
-      <a href={url} className={style}>
+      <a href={url} className={modifiers}>
         {text}
       </a>
     );
   }
 
-  return <span className={style}>{text}</span>;
+  return <span className={modifiers}>{text}</span>;
 };
 
 export default Button;

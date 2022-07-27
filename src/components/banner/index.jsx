@@ -30,7 +30,7 @@ const Banner = () => {
               <Button
                 text={<span>Join Us As We Remember Our Special Day</span>}
                 url="/"
-                style="button button--white button--line"
+                modifiers="button button--white button--line"
               />
             </p>
           </div>
