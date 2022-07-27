@@ -15,7 +15,7 @@ import Spacer from "../components/spacer";
 
 const HomeRoute = () => {
   return (
-    <div class="main">
+    <>
       <Nav />
 
       <Content
@@ -138,7 +138,7 @@ const HomeRoute = () => {
           </>
         }
       />
-    </div>
+    </>
   );
 };
 
