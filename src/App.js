@@ -76,12 +76,12 @@ function App() {
                   <Spacer size={300} />
 
                   <Cards
+                    size="is-4by3"
                     cards={[
                       {
                         image: {
                           url: "images/group1-small.jpg",
                           alt: "Bride, groom, groom's family and bridesmaids",
-                          size: "is-16by9",
                         },
                         title: "Our Gallery",
                         text:
@@ -93,7 +93,6 @@ function App() {
                         image: {
                           url: "images/venue-small.jpg",
                           alt: "The entrance to farnham castle",
-                          size: "is-16by9",
                         },
                         title: "The Venue",
                         text:
@@ -106,7 +105,6 @@ function App() {
                         image: {
                           url: "images/food1-small.jpg",
                           alt: "Picture of a desert served on the night",
-                          size: "is-16by9",
                         },
                         title: "The Menu",
                         text:
@@ -119,7 +117,6 @@ function App() {
                         image: {
                           url: "images/group2-small.jpg",
                           alt: "Bride, groom, groom's family and bridesmaids",
-                          size: "is-16by9",
                         },
                         title: "The Guest List",
                         text:
