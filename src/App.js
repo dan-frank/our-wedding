@@ -8,6 +8,7 @@ import Banner from "./components/banner";
 import ContentCard from "./components/content/content-card";
 import Spacer from "./components/spacer";
 import CoupleHighlight from "./components/couple-highlight";
+import ImageBanner from "./components/banner/image";
 
 function App() {
   return (
@@ -51,12 +52,11 @@ function App() {
           }
         />
 
-        {/* <!-- Image Banner--> */}
-        <div class="image-banner">
-          <div class="image-shape rec-16-by-9">
-            <img src="images/stairs.jpg" />
-          </div>
-        </div>
+        <ImageBanner
+          url="images/stairs.jpg"
+          alt="Bride and groom walking down the stairs"
+          size="is-16by9"
+        />
 
         <div class="content-bottom">
           {/* <!--        Message--> */}
