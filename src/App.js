@@ -4,6 +4,7 @@ import "normalize.css";
 
 import Nav from "./components/nav";
 import Banner from "./components/banner";
+import ContentCard from "./components/content-card";
 import Spacer from "./components/spacer";
 import CoupleHighlight from "./components/couple-highlight";
 
@@ -23,13 +24,10 @@ function App() {
             </h2>
           </div>
 
-          {/* <!-- Top Card--> */}
-          <div class="content-main content-card">
-            <div class="container">
-              <Spacer size={300} />
-
-              {/* <!-- Happy Couple--> */}
-              <div class="happy-couple">
+          <ContentCard
+            children={
+              <>
+                <Spacer size={300} />
                 <CoupleHighlight
                   initials="BL"
                   image="images/becca-small.jpg"
@@ -41,18 +39,16 @@ function App() {
                     </a>
                   }
                 />
-
                 <Spacer size={500} />
-
                 <CoupleHighlight
                   initials="DL"
                   image="images/dan-small.jpg"
                   title="groom"
                   name="Daniel Lucas"
                 />
-              </div>
-            </div>
-          </div>
+              </>
+            }
+          />
         </div>
 
         {/* <!-- Image Banner--> */}
