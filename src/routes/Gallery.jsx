@@ -7,6 +7,7 @@ import Nav from "../components/nav";
 import Spacer from "../components/spacer";
 import Video from "../components/image/video";
 import Gallery from "../components/gallery";
+import Footer from "../components/footer";
 
 const GalleryRoute = () => {
   return (
@@ -43,7 +44,7 @@ const GalleryRoute = () => {
                       },
                     ]}
                   />
-                  <Spacer size={500} />
+                  <Spacer size={300} />
                   <Gallery
                     size="is-3by4"
                     images={[
@@ -169,7 +170,7 @@ const GalleryRoute = () => {
                       },
                     ]}
                   />
-                  <Spacer size={500} />
+                  <Spacer size={300} />
                   <Gallery
                     size="is-3by4"
                     images={[
@@ -344,7 +345,7 @@ const GalleryRoute = () => {
                       // { url: "images/gallery/2-ceremony/1900-small.jpg", alt: "", lightbox: { url: "images/gallery/2-ceremony/1900.jpg", group: "wedding" } },
                     ]}
                   />
-                  <Spacer size={500} />
+                  <Spacer size={300} />
                   <Gallery
                     size="is-3by4"
                     images={[
@@ -862,7 +863,7 @@ const GalleryRoute = () => {
                       },
                     ]}
                   />
-                  <Spacer size={500} />
+                  <Spacer size={300} />
                   <Gallery
                     size="is-3by4"
                     images={[
@@ -1156,7 +1157,7 @@ const GalleryRoute = () => {
                       },
                     ]}
                   />
-                  <Spacer size={500} />
+                  <Spacer size={300} />
                   <Gallery
                     size="is-3by4"
                     images={[
@@ -1594,7 +1595,7 @@ const GalleryRoute = () => {
                       },
                     ]}
                   />
-                  <Spacer size={500} />
+                  <Spacer size={300} />
                   <Gallery
                     size="is-3by4"
                     images={[
@@ -1648,6 +1649,8 @@ const GalleryRoute = () => {
                       },
                     ]}
                   />
+                  <Spacer size={300} />
+                  <Footer />
                 </>
               }
             />
