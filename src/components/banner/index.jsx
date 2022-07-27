@@ -1,17 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import "./banner.css";
 
 import Button from "../button";
 import { BsPlayFill } from "react-icons/bs";
+import PopupWeddingVideo from "../popup/wedding-video";
 
 const Banner = () => {
+  const [showPopup, setShowPopup] = useState(false);
+
+  const openPopup = () => {
+    setShowPopup(true);
+  };
+
   return (
     <div class="banner-container">
       <div class="banner-circle-container">
         <div class="banner-circle">
-          <div class="play-button popup-trigger" data-target="popup-video">
+          <div
+            class="play-button popup-trigger"
+            data-target="popup-video"
+            onClick={openPopup}
+          >
             <BsPlayFill />
           </div>
+          {showPopup ? <PopupWeddingVideo setShowPopup={setShowPopup} /> : null}
 
           <div class="banner-image">
             <div class="image-shape square">
