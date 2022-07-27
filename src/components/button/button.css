@@ -48,12 +48,14 @@
   padding-left: 10px;
 }
 .button--link {
-  text-decoration: none;
   font-weight: bolder;
-  color: var(--color-light-text);
+  padding: unset;
+  background: transparent;
+  border: 0px transparent;
+  color: var(--color-dark-background);
 }
 .button--link:hover {
-  color: var(--color-primary-text);
+  color: var(--color-light-text);
 }
 .button--primary {
   background-color: var(--color-primary-background);
