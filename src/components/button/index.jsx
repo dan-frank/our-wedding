@@ -3,10 +3,16 @@ import "./button.css";
 
 const Button = ({ text, url, modifiers, blank }) => {
   if (url) {
-    const target = blank ? `target="_blank" rel="noreferrer"` : "";
+    if (blank) {
+      return (
+        <a href={url} className={modifiers} target="_blank" rel="noreferrer">
+          {text}
+        </a>
+      );
+    }
 
     return (
-      <a href={url} className={modifiers} {...target}>
+      <a href={url} className={modifiers}>
         {text}
       </a>
     );
