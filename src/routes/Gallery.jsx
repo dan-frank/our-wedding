@@ -1,5 +1,4 @@
 import React from "react";
-import "normalize.css";
 
 import Banner from "../components/banner";
 import Content from "../components/content";
