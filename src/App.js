@@ -16,19 +16,13 @@ function App() {
 
       <div class="main">
         <Content
-          position={"top"}
+          position="top"
           children={
             <>
               <Banner />
-
-              {/* <!-- Card Title--> */}
-              <div class="content-card-title-container">
-                <h2 class="font-serif-2 font-size-600 font-pink-200 content-card-title">
-                  The Happy Couple
-                </h2>
-              </div>
-
+              <Spacer size={200} />
               <ContentCard
+                title="The Happy Couple"
                 children={
                   <>
                     <Spacer size={300} />
