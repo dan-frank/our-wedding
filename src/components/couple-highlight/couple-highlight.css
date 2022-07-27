@@ -1,0 +1,67 @@
+.happy-person {
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.happy-person--groom {
+  flex-direction: row-reverse;
+}
+.happy-person__initials {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  opacity: 0.2;
+}
+.happy-person__initials p {
+  padding: 0 1em;
+}
+.happy-person__image {
+  /* flex: 0 1 30%; */
+  flex: 0 1 360px;
+  position: relative;
+  z-index: 10;
+}
+.happy-person__name {
+  position: relative;
+  z-index: 10;
+}
+.happy-person__name .happy-person__title {
+  position: relative;
+}
+.happy-person__name .happy-person__title:after {
+  content: "";
+  width: 126px;
+  height: 1px;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  background: var(--color-dark-background);
+}
+
+@media only screen and (max-width: var(--breakpoint-tablet)) {
+  .happy-person__image {
+    flex-basis: 300px;
+  }
+}
+
+@media only screen and (max-width: var(--breakpoint-mobile-sml)) {
+  .happy-person {
+    flex-direction: column;
+  }
+  .happy-person__initials {
+    display: none;
+  }
+  .happy-person__image {
+    flex-basis: 70%;
+    width: 70%;
+    order: 0;
+    margin-bottom: 12px;
+  }
+  .happy-person__name {
+    order: 10;
+  }
+}
