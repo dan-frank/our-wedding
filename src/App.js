@@ -10,6 +10,7 @@ import Spacer from "./components/spacer";
 import CoupleHighlight from "./components/couple-highlight";
 import ImageBanner from "./components/banner/image";
 import Message from "./components/message";
+import Card from "./components/cards/card";
 
 function App() {
   return (
@@ -79,10 +80,23 @@ function App() {
             <div class="container">
               <Spacer size={300} />
 
+              <Card
+                image={{
+                  url: "images/group1-small.jpg",
+                  alt: "Bride, groom, groom's family and bridesmaids",
+                  size: "is-16by9",
+                }}
+                title="Our Gallery"
+                text={
+                  "A collection of our favourite images from the morning " +
+                  "all the way through to the embarrassing evening."
+                }
+              />
+
               <div class="page-links">
                 <div class="page-link">
                   <div class="image-shape rec-4-by-3">
-                    <img src="images/group1-small.jpg" />
+                    <img src="" />
                   </div>
 
                   <a class="content" href="/gallery.html">
@@ -90,10 +104,7 @@ function App() {
                       Our Gallery
                     </h2>
                     <div class="text">
-                      <p class="message font-sans-serif font-transform-none m-t-sm m-b-none">
-                        A collection of our favourite images from the morning
-                        all the way through to the embarrassing evening.
-                      </p>
+                      <p class="message font-sans-serif font-transform-none m-t-sm m-b-none"></p>
                       <i class="fal fa-long-arrow-right font-size-350"></i>
                     </div>
                   </a>
