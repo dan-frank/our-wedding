@@ -1,7 +1,7 @@
-.content-top {
+.content--top {
   background: var(--gradient-blue-pink);
 }
 
-.content-bottom {
+.content--bottom {
   background: var(--gradient-pink-blue);
 }

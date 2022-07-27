@@ -102,13 +102,13 @@
 
   --gradient-blue-pink: linear-gradient(
     180deg,
-    var(--blue-100) 0%,
-    var(--pink-400) 100%
+    var(--color-blue-100) 0%,
+    var(--color-pink-400) 100%
   );
   --gradient-pink-blue: linear-gradient(
     0,
-    var(--blue-100) 0%,
-    var(--pink-400) 100%
+    var(--color-blue-100) 0%,
+    var(--color-pink-400) 100%
   );
 
   /*
