@@ -10,7 +10,7 @@ import Spacer from "./components/spacer";
 import CoupleHighlight from "./components/couple-highlight";
 import ImageBanner from "./components/banner/image";
 import Message from "./components/message";
-import Card from "./components/cards/card";
+import Cards from "./components/cards";
 
 function App() {
   return (
@@ -80,104 +80,62 @@ function App() {
             <div class="container">
               <Spacer size={300} />
 
-              <Card
-                image={{
-                  url: "images/group1-small.jpg",
-                  alt: "Bride, groom, groom's family and bridesmaids",
-                  size: "is-16by9",
-                }}
-                title="Our Gallery"
-                text={
-                  "A collection of our favourite images from the morning " +
-                  "all the way through to the embarrassing evening."
-                }
+              <Cards
+                cards={[
+                  {
+                    image: {
+                      url: "images/group1-small.jpg",
+                      alt: "Bride, groom, groom's family and bridesmaids",
+                      size: "is-16by9",
+                    },
+                    title: "Our Gallery",
+                    text:
+                      "A collection of our favourite images from the morning " +
+                      "all the way through to the embarrassing evening.",
+                    url: "/gallery.html",
+                  },
+                  {
+                    image: {
+                      url: "images/venue-small.jpg",
+                      alt: "The entrance to farnham castle",
+                      size: "is-16by9",
+                    },
+                    title: "The Venue",
+                    text:
+                      "Walk through the halls once again. Remind yourself of " +
+                      "the castle that has stood tall and strong for over 800 " +
+                      "years.",
+                    url: "javascript:alert('Coming Soon!');",
+                  },
+                  {
+                    image: {
+                      url: "images/food1-small.jpg",
+                      alt: "Picture of a desert served on the night",
+                      size: "is-16by9",
+                    },
+                    title: "The Menu",
+                    text:
+                      " Some wonderful food was served on our special day. If " +
+                      "you're thinking of recreating it at home, this is what " +
+                      "you ate.",
+                    url: "javascript:alert('Coming Soon!');",
+                  },
+                  {
+                    image: {
+                      url: "images/group2-small.jpg",
+                      alt: "Bride, groom, groom's family and bridesmaids",
+                      size: "is-16by9",
+                    },
+                    title: "The Guest List",
+                    text:
+                      "Made a once in a lifetime friend but forgot their name " +
+                      "because you had too much to drink?",
+                    url: "javascript:alert('Coming Soon!');",
+                  },
+                ]}
               />
 
               <div class="page-links">
-                <div class="page-link">
-                  <div class="image-shape rec-4-by-3">
-                    <img src="" />
-                  </div>
-
-                  <a class="content" href="/gallery.html">
-                    <h2 class="font-serif-1 font-size-300 m-t-none m-b-sm">
-                      Our Gallery
-                    </h2>
-                    <div class="text">
-                      <p class="message font-sans-serif font-transform-none m-t-sm m-b-none"></p>
-                      <i class="fal fa-long-arrow-right font-size-350"></i>
-                    </div>
-                  </a>
-                </div>
-
-                <div class="page-link">
-                  <div class="image-shape rec-4-by-3">
-                    <img src="images/venue-small.jpg" />
-                  </div>
-                  <a
-                    class="content"
-                    href="javascript:;"
-                    onclick="alert('Coming Soon!');"
-                  >
-                    <h2 class="font-serif-1 font-size-300 m-t-none m-b-sm">
-                      The Venue
-                    </h2>
-                    <div class="text">
-                      <p class="message font-sans-serif font-transform-none m-t-sm m-b-none">
-                        Walk through the halls once again. Remind yourself of
-                        the castle that has stood tall and strong for over 800
-                        years.
-                      </p>
-                      <i class="fal fa-long-arrow-right font-size-350"></i>
-                    </div>
-                  </a>
-                </div>
-
-                <div class="page-link">
-                  <div class="image-shape rec-4-by-3">
-                    <img src="images/food1-small.jpg" />
-                  </div>
-                  <a
-                    class="content"
-                    href="javascript:;"
-                    onclick="alert('Coming Soon!');"
-                  >
-                    <h2 class="font-serif-1 font-size-300 m-t-none m-b-sm">
-                      The Menu
-                    </h2>
-                    <div class="text">
-                      <p class="message font-sans-serif font-transform-none m-t-sm m-b-none">
-                        Some wonderful food was served on our special day. If
-                        you’re thinking of recreating it at home, this is what
-                        you ate.
-                      </p>
-                      <i class="fal fa-long-arrow-right font-size-350"></i>
-                    </div>
-                  </a>
-                </div>
-
-                <div class="page-link">
-                  <div class="image-shape rec-4-by-3">
-                    <img src="images/group2-small.jpg" />
-                  </div>
-                  <a
-                    class="content"
-                    href="javascript:;"
-                    onclick="alert('Coming Soon!');"
-                  >
-                    <h2 class="font-serif-1 font-size-300 m-t-none m-b-sm">
-                      The Guest List
-                    </h2>
-                    <div class="text">
-                      <p class="message font-sans-serif font-transform-none m-t-sm m-b-none">
-                        Made a once in a lifetime friend but forgot their name
-                        because you had too much to drink?
-                      </p>
-                      <i class="fal fa-long-arrow-right font-size-350"></i>
-                    </div>
-                  </a>
-                </div>
-
                 <Spacer size={300} />
 
                 <div class="footer">
