@@ -16,8 +16,10 @@ const ContentCard = ({ title, children }) => {
   return (
     <>
       <div className="content-card">
-        {title_html}
-        <div className="container">{children}</div>
+        <div className="container">
+          {title_html}
+          <div className="container">{children}</div>
+        </div>
       </div>
     </>
   );

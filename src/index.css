@@ -337,3 +337,13 @@ p {
 .font-transform-none {
   text-transform: none;
 }
+
+.container {
+  margin: 0 auto;
+  width: var(--container-desktop);
+}
+@media only screen and (max-width: var(--breakpoint-tablet)) {
+  .container {
+    width: var(--container-desktop-mobile);
+  }
+}

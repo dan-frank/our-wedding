@@ -10,181 +10,149 @@ import Spacer from "./components/spacer";
 import CoupleHighlight from "./components/couple-highlight";
 import ImageBanner from "./components/banner/image";
 import Message from "./components/message";
+import Cards from "./components/cards";
 
 function App() {
   return (
-    <>
+    <div class="main">
       <Nav />
 
-      <div class="main">
-        <Content
-          position="top"
-          children={
-            <>
-              <Banner />
-              <Spacer size={200} />
-              <ContentCard
-                title="The Happy Couple"
-                children={
-                  <>
-                    <Spacer size={300} />
-                    <CoupleHighlight
-                      initials="BL"
-                      image="images/becca-small.jpg"
-                      title="bride"
-                      name="Becca Lucas"
-                      button={
-                        <a href="/" class="button-whole-pink font-sans-serif">
-                          The Groom
-                        </a>
-                      }
-                    />
-                    <Spacer size={500} />
-                    <CoupleHighlight
-                      initials="DL"
-                      image="images/dan-small.jpg"
-                      title="groom"
-                      name="Daniel Lucas"
-                    />
-                  </>
-                }
-              />
-            </>
-          }
-        />
+      <Content
+        position="top"
+        children={
+          <>
+            <Banner />
+            <Spacer size={200} />
+            <ContentCard
+              title="The Happy Couple"
+              children={
+                <>
+                  <Spacer size={300} />
+                  <CoupleHighlight
+                    initials="BL"
+                    image="images/becca-small.jpg"
+                    title="bride"
+                    name="Becca Lucas"
+                    button={
+                      <a href="/" class="button-whole-pink font-sans-serif">
+                        The Groom
+                      </a>
+                    }
+                  />
+                  <Spacer size={500} />
+                  <CoupleHighlight
+                    initials="DL"
+                    image="images/dan-small.jpg"
+                    title="groom"
+                    name="Daniel Lucas"
+                  />
+                </>
+              }
+            />
+          </>
+        }
+      />
 
-        <ImageBanner
-          url="images/stairs.jpg"
-          alt="Bride and groom walking down the stairs"
-          size="is-16by9"
-        />
+      <ImageBanner
+        url="images/stairs.jpg"
+        alt="Bride and groom walking down the stairs"
+        size="is-16by9"
+      />
 
-        <div class="content-bottom">
-          <Message message="We just want to thank everyone for coming and for supporting us for the start of our greatest adventure" />
+      <Content
+        position="bottom"
+        children={
+          <>
+            <Message
+              message={
+                "We just want to thank everyone for coming and for supporting us for the " +
+                "start of our greatest adventure"
+              }
+            />
+            <ContentCard
+              title="Take a Second to Remember"
+              children={
+                <>
+                  <Spacer size={300} />
 
-          {/* <!--        Card Title--> */}
-          <div class="content-card-title-container">
-            <h2 class="font-serif-2 font-size-600 font-pink-200 content-card-title">
-              Take a Second to Remember
-            </h2>
-          </div>
+                  <Cards
+                    cards={[
+                      {
+                        image: {
+                          url: "images/group1-small.jpg",
+                          alt: "Bride, groom, groom's family and bridesmaids",
+                          size: "is-16by9",
+                        },
+                        title: "Our Gallery",
+                        text:
+                          "A collection of our favourite images from the morning " +
+                          "all the way through to the embarrassing evening.",
+                        url: "/gallery.html",
+                      },
+                      {
+                        image: {
+                          url: "images/venue-small.jpg",
+                          alt: "The entrance to farnham castle",
+                          size: "is-16by9",
+                        },
+                        title: "The Venue",
+                        text:
+                          "Walk through the halls once again. Remind yourself of " +
+                          "the castle that has stood tall and strong for over 800 " +
+                          "years.",
+                        url: "javascript:alert('Coming Soon!');",
+                      },
+                      {
+                        image: {
+                          url: "images/food1-small.jpg",
+                          alt: "Picture of a desert served on the night",
+                          size: "is-16by9",
+                        },
+                        title: "The Menu",
+                        text:
+                          " Some wonderful food was served on our special day. If " +
+                          "you're thinking of recreating it at home, this is what " +
+                          "you ate.",
+                        url: "javascript:alert('Coming Soon!');",
+                      },
+                      {
+                        image: {
+                          url: "images/group2-small.jpg",
+                          alt: "Bride, groom, groom's family and bridesmaids",
+                          size: "is-16by9",
+                        },
+                        title: "The Guest List",
+                        text:
+                          "Made a once in a lifetime friend but forgot their name " +
+                          "because you had too much to drink?",
+                        url: "javascript:alert('Coming Soon!');",
+                      },
+                    ]}
+                  />
+                  <Spacer size={300} />
 
-          {/* <!--        Top Card--> */}
-          <div class="content-main content-card">
-            <div class="container">
-              <Spacer size={300} />
+                  <div class="footer">
+                    <p class="font-sans-serif m-y-none">
+                      Designed and developed by Daniel Lucas
+                    </p>
 
-              <div class="page-links">
-                <div class="page-link">
-                  <div class="image-shape rec-4-by-3">
-                    <img src="images/group1-small.jpg" />
+                    <p class="font-sans-serif m-y-none">
+                      Download from{" "}
+                      <a
+                        href="https://github.com/dan-frank/our_wedding"
+                        target="_blank"
+                        class="button-link"
+                      >
+                        <i class="fab fa-github"></i> GitHub
+                      </a>
+                    </p>
                   </div>
-
-                  <a class="content" href="/gallery.html">
-                    <h2 class="font-serif-1 font-size-300 m-t-none m-b-sm">
-                      Our Gallery
-                    </h2>
-                    <div class="text">
-                      <p class="message font-sans-serif font-transform-none m-t-sm m-b-none">
-                        A collection of our favourite images from the morning
-                        all the way through to the embarrassing evening.
-                      </p>
-                      <i class="fal fa-long-arrow-right font-size-350"></i>
-                    </div>
-                  </a>
-                </div>
-
-                <div class="page-link">
-                  <div class="image-shape rec-4-by-3">
-                    <img src="images/venue-small.jpg" />
-                  </div>
-                  <a
-                    class="content"
-                    href="javascript:;"
-                    onclick="alert('Coming Soon!');"
-                  >
-                    <h2 class="font-serif-1 font-size-300 m-t-none m-b-sm">
-                      The Venue
-                    </h2>
-                    <div class="text">
-                      <p class="message font-sans-serif font-transform-none m-t-sm m-b-none">
-                        Walk through the halls once again. Remind yourself of
-                        the castle that has stood tall and strong for over 800
-                        years.
-                      </p>
-                      <i class="fal fa-long-arrow-right font-size-350"></i>
-                    </div>
-                  </a>
-                </div>
-
-                <div class="page-link">
-                  <div class="image-shape rec-4-by-3">
-                    <img src="images/food1-small.jpg" />
-                  </div>
-                  <a
-                    class="content"
-                    href="javascript:;"
-                    onclick="alert('Coming Soon!');"
-                  >
-                    <h2 class="font-serif-1 font-size-300 m-t-none m-b-sm">
-                      The Menu
-                    </h2>
-                    <div class="text">
-                      <p class="message font-sans-serif font-transform-none m-t-sm m-b-none">
-                        Some wonderful food was served on our special day. If
-                        you’re thinking of recreating it at home, this is what
-                        you ate.
-                      </p>
-                      <i class="fal fa-long-arrow-right font-size-350"></i>
-                    </div>
-                  </a>
-                </div>
-
-                <div class="page-link">
-                  <div class="image-shape rec-4-by-3">
-                    <img src="images/group2-small.jpg" />
-                  </div>
-                  <a
-                    class="content"
-                    href="javascript:;"
-                    onclick="alert('Coming Soon!');"
-                  >
-                    <h2 class="font-serif-1 font-size-300 m-t-none m-b-sm">
-                      The Guest List
-                    </h2>
-                    <div class="text">
-                      <p class="message font-sans-serif font-transform-none m-t-sm m-b-none">
-                        Made a once in a lifetime friend but forgot their name
-                        because you had too much to drink?
-                      </p>
-                      <i class="fal fa-long-arrow-right font-size-350"></i>
-                    </div>
-                  </a>
-                </div>
-
-                <Spacer size={300} />
-
-                <div class="footer">
-                  <p class="font-sans-serif m-y-none">
-                    Designed and developed by Daniel Lucas
-                  </p>
-
-                  <p class="font-sans-serif m-y-none">
-                    Download from{" "}
-                    <a
-                      href="https://github.com/dan-frank/our_wedding"
-                      target="_blank"
-                      class="button-link"
-                    >
-                      <i class="fab fa-github"></i> GitHub
-                    </a>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+                </>
+              }
+            />
+          </>
+        }
+      />
 
       <div id="popup-video" class="popup">
         <div class="popup-content">
@@ -198,7 +166,7 @@ function App() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
