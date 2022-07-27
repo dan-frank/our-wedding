@@ -13,7 +13,6 @@ import Message from "./components/message";
 import Cards from "./components/cards";
 import Footer from "./components/footer";
 import Button from "./components/button";
-import Popup from "./components/popup";
 
 function App() {
   return (
