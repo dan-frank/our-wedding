@@ -1,14 +1,18 @@
 import React from "react";
+
 import "./banner.css";
 
-import { BsPlayFill } from "react-icons/bs";
+import { BsPlayFill } from 'react-icons/bs';
 
-const Banner = () => {
+function Banner() {
   return (
     <div class="banner-container">
       <div class="banner-circle-container">
         <div class="banner-circle">
-          <div class="play-button popup-trigger" data-target="popup-video">
+          <div
+            class="play-button popup-trigger"
+            data-target="popup-video"
+          >
             <BsPlayFill />
           </div>
 
@@ -35,6 +39,6 @@ const Banner = () => {
       </div>
     </div>
   );
-};
+}
 
 export default Banner;
