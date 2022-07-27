@@ -169,7 +169,7 @@ const GalleryRoute = () => {
                       },
                     ]}
                   />
-
+                  <Spacer size={500} />
                   <Gallery
                     size="is-3by4"
                     images={[
@@ -344,7 +344,7 @@ const GalleryRoute = () => {
                       // { url: "images/gallery/2-ceremony/1900-small.jpg", alt: "", lightbox: { url: "images/gallery/2-ceremony/1900.jpg", group: "wedding" } },
                     ]}
                   />
-
+                  <Spacer size={500} />
                   <Gallery
                     size="is-3by4"
                     images={[
@@ -449,30 +449,6 @@ const GalleryRoute = () => {
                         alt: "",
                         lightbox: {
                           url: "images/gallery/3-intermission/1100.jpg",
-                          group: "wedding",
-                        },
-                      },
-                      {
-                        url: "images/gallery/3-intermission/1120-small.jpg",
-                        alt: "",
-                        lightbox: {
-                          url: "images/gallery/3-intermission/1120.jpg",
-                          group: "wedding",
-                        },
-                      },
-                      {
-                        url: "images/gallery/3-intermission/1140-small.jpg",
-                        alt: "",
-                        lightbox: {
-                          url: "images/gallery/3-intermission/1140.jpg",
-                          group: "wedding",
-                        },
-                      },
-                      {
-                        url: "images/gallery/3-intermission/1160-small.jpg",
-                        alt: "",
-                        lightbox: {
-                          url: "images/gallery/3-intermission/1160.jpg",
                           group: "wedding",
                         },
                       },
@@ -886,7 +862,7 @@ const GalleryRoute = () => {
                       },
                     ]}
                   />
-
+                  <Spacer size={500} />
                   <Gallery
                     size="is-3by4"
                     images={[
@@ -1180,7 +1156,7 @@ const GalleryRoute = () => {
                       },
                     ]}
                   />
-
+                  <Spacer size={500} />
                   <Gallery
                     size="is-3by4"
                     images={[
@@ -1618,7 +1594,7 @@ const GalleryRoute = () => {
                       },
                     ]}
                   />
-
+                  <Spacer size={500} />
                   <Gallery
                     size="is-3by4"
                     images={[
