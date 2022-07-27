@@ -3,7 +3,9 @@ import React from "react";
 import "normalize.css";
 
 import Nav from "./components/nav";
+import Content from "./components/content";
 import Banner from "./components/banner";
+import ContentCard from "./components/content/content-card";
 import Spacer from "./components/spacer";
 import CoupleHighlight from "./components/couple-highlight";
 
@@ -13,47 +15,41 @@ function App() {
       <Nav />
 
       <div class="main">
-        <div class="content-top">
-          <Banner />
-
-          {/* <!-- Card Title--> */}
-          <div class="content-card-title-container">
-            <h2 class="font-serif-2 font-size-600 font-pink-200 content-card-title">
-              The Happy Couple
-            </h2>
-          </div>
-
-          {/* <!-- Top Card--> */}
-          <div class="content-main content-card">
-            <div class="container">
-              <Spacer size={300} />
-
-              {/* <!-- Happy Couple--> */}
-              <div class="happy-couple">
-                <CoupleHighlight
-                  initials="BL"
-                  image="images/becca-small.jpg"
-                  title="bride"
-                  name="Becca Lucas"
-                  button={
-                    <a href="/" class="button-whole-pink font-sans-serif">
-                      The Groom
-                    </a>
-                  }
-                />
-
-                <Spacer size={500} />
-
-                <CoupleHighlight
-                  initials="DL"
-                  image="images/dan-small.jpg"
-                  title="groom"
-                  name="Daniel Lucas"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
+        <Content
+          position="top"
+          children={
+            <>
+              <Banner />
+              <Spacer size={200} />
+              <ContentCard
+                title="The Happy Couple"
+                children={
+                  <>
+                    <Spacer size={300} />
+                    <CoupleHighlight
+                      initials="BL"
+                      image="images/becca-small.jpg"
+                      title="bride"
+                      name="Becca Lucas"
+                      button={
+                        <a href="/" class="button-whole-pink font-sans-serif">
+                          The Groom
+                        </a>
+                      }
+                    />
+                    <Spacer size={500} />
+                    <CoupleHighlight
+                      initials="DL"
+                      image="images/dan-small.jpg"
+                      title="groom"
+                      name="Daniel Lucas"
+                    />
+                  </>
+                }
+              />
+            </>
+          }
+        />
 
         {/* <!-- Image Banner--> */}
         <div class="image-banner">
