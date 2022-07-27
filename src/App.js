@@ -14,147 +14,145 @@ import Cards from "./components/cards";
 
 function App() {
   return (
-    <>
+    <div class="main">
       <Nav />
 
-      <div class="main">
-        <Content
-          position="top"
-          children={
-            <>
-              <Banner />
-              <Spacer size={200} />
-              <ContentCard
-                title="The Happy Couple"
-                children={
-                  <>
-                    <Spacer size={300} />
-                    <CoupleHighlight
-                      initials="BL"
-                      image="images/becca-small.jpg"
-                      title="bride"
-                      name="Becca Lucas"
-                      button={
-                        <a href="/" class="button-whole-pink font-sans-serif">
-                          The Groom
-                        </a>
-                      }
-                    />
-                    <Spacer size={500} />
-                    <CoupleHighlight
-                      initials="DL"
-                      image="images/dan-small.jpg"
-                      title="groom"
-                      name="Daniel Lucas"
-                    />
-                  </>
-                }
-              />
-            </>
-          }
-        />
+      <Content
+        position="top"
+        children={
+          <>
+            <Banner />
+            <Spacer size={200} />
+            <ContentCard
+              title="The Happy Couple"
+              children={
+                <>
+                  <Spacer size={300} />
+                  <CoupleHighlight
+                    initials="BL"
+                    image="images/becca-small.jpg"
+                    title="bride"
+                    name="Becca Lucas"
+                    button={
+                      <a href="/" class="button-whole-pink font-sans-serif">
+                        The Groom
+                      </a>
+                    }
+                  />
+                  <Spacer size={500} />
+                  <CoupleHighlight
+                    initials="DL"
+                    image="images/dan-small.jpg"
+                    title="groom"
+                    name="Daniel Lucas"
+                  />
+                </>
+              }
+            />
+          </>
+        }
+      />
 
-        <ImageBanner
-          url="images/stairs.jpg"
-          alt="Bride and groom walking down the stairs"
-          size="is-16by9"
-        />
+      <ImageBanner
+        url="images/stairs.jpg"
+        alt="Bride and groom walking down the stairs"
+        size="is-16by9"
+      />
 
-        <Content
-          position="bottom"
-          children={
-            <>
-              <Message
-                message={
-                  "We just want to thank everyone for coming and for supporting us for the " +
-                  "start of our greatest adventure"
-                }
-              />
-              <ContentCard
-                title="Take a Second to Remember"
-                children={
-                  <>
-                    <Spacer size={300} />
+      <Content
+        position="bottom"
+        children={
+          <>
+            <Message
+              message={
+                "We just want to thank everyone for coming and for supporting us for the " +
+                "start of our greatest adventure"
+              }
+            />
+            <ContentCard
+              title="Take a Second to Remember"
+              children={
+                <>
+                  <Spacer size={300} />
 
-                    <Cards
-                      cards={[
-                        {
-                          image: {
-                            url: "images/group1-small.jpg",
-                            alt: "Bride, groom, groom's family and bridesmaids",
-                            size: "is-16by9",
-                          },
-                          title: "Our Gallery",
-                          text:
-                            "A collection of our favourite images from the morning " +
-                            "all the way through to the embarrassing evening.",
-                          url: "/gallery.html",
+                  <Cards
+                    cards={[
+                      {
+                        image: {
+                          url: "images/group1-small.jpg",
+                          alt: "Bride, groom, groom's family and bridesmaids",
+                          size: "is-16by9",
                         },
-                        {
-                          image: {
-                            url: "images/venue-small.jpg",
-                            alt: "The entrance to farnham castle",
-                            size: "is-16by9",
-                          },
-                          title: "The Venue",
-                          text:
-                            "Walk through the halls once again. Remind yourself of " +
-                            "the castle that has stood tall and strong for over 800 " +
-                            "years.",
-                          url: "javascript:alert('Coming Soon!');",
+                        title: "Our Gallery",
+                        text:
+                          "A collection of our favourite images from the morning " +
+                          "all the way through to the embarrassing evening.",
+                        url: "/gallery.html",
+                      },
+                      {
+                        image: {
+                          url: "images/venue-small.jpg",
+                          alt: "The entrance to farnham castle",
+                          size: "is-16by9",
                         },
-                        {
-                          image: {
-                            url: "images/food1-small.jpg",
-                            alt: "Picture of a desert served on the night",
-                            size: "is-16by9",
-                          },
-                          title: "The Menu",
-                          text:
-                            " Some wonderful food was served on our special day. If " +
-                            "you're thinking of recreating it at home, this is what " +
-                            "you ate.",
-                          url: "javascript:alert('Coming Soon!');",
+                        title: "The Venue",
+                        text:
+                          "Walk through the halls once again. Remind yourself of " +
+                          "the castle that has stood tall and strong for over 800 " +
+                          "years.",
+                        url: "javascript:alert('Coming Soon!');",
+                      },
+                      {
+                        image: {
+                          url: "images/food1-small.jpg",
+                          alt: "Picture of a desert served on the night",
+                          size: "is-16by9",
                         },
-                        {
-                          image: {
-                            url: "images/group2-small.jpg",
-                            alt: "Bride, groom, groom's family and bridesmaids",
-                            size: "is-16by9",
-                          },
-                          title: "The Guest List",
-                          text:
-                            "Made a once in a lifetime friend but forgot their name " +
-                            "because you had too much to drink?",
-                          url: "javascript:alert('Coming Soon!');",
+                        title: "The Menu",
+                        text:
+                          " Some wonderful food was served on our special day. If " +
+                          "you're thinking of recreating it at home, this is what " +
+                          "you ate.",
+                        url: "javascript:alert('Coming Soon!');",
+                      },
+                      {
+                        image: {
+                          url: "images/group2-small.jpg",
+                          alt: "Bride, groom, groom's family and bridesmaids",
+                          size: "is-16by9",
                         },
-                      ]}
-                    />
-                    <Spacer size={300} />
+                        title: "The Guest List",
+                        text:
+                          "Made a once in a lifetime friend but forgot their name " +
+                          "because you had too much to drink?",
+                        url: "javascript:alert('Coming Soon!');",
+                      },
+                    ]}
+                  />
+                  <Spacer size={300} />
 
-                    <div class="footer">
-                      <p class="font-sans-serif m-y-none">
-                        Designed and developed by Daniel Lucas
-                      </p>
+                  <div class="footer">
+                    <p class="font-sans-serif m-y-none">
+                      Designed and developed by Daniel Lucas
+                    </p>
 
-                      <p class="font-sans-serif m-y-none">
-                        Download from{" "}
-                        <a
-                          href="https://github.com/dan-frank/our_wedding"
-                          target="_blank"
-                          class="button-link"
-                        >
-                          <i class="fab fa-github"></i> GitHub
-                        </a>
-                      </p>
-                    </div>
-                  </>
-                }
-              />
-            </>
-          }
-        />
-      </div>
+                    <p class="font-sans-serif m-y-none">
+                      Download from{" "}
+                      <a
+                        href="https://github.com/dan-frank/our_wedding"
+                        target="_blank"
+                        class="button-link"
+                      >
+                        <i class="fab fa-github"></i> GitHub
+                      </a>
+                    </p>
+                  </div>
+                </>
+              }
+            />
+          </>
+        }
+      />
 
       <div id="popup-video" class="popup">
         <div class="popup-content">
@@ -168,7 +166,7 @@ function App() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
