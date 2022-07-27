@@ -12,6 +12,8 @@
   position: relative;
   z-index: 10;
   color: var(--color-white-background);
+  background-color: transparent;
+  border-color: transparent;
 }
 .button--line:before {
   content: "";
@@ -53,14 +55,19 @@
 .button--primary:hover {
   background-color: var(--color-primary-hover);
 }
-.button--primary.button__line span {
+.button--primary.button--line {
+  background-color: transparent;
+  border-color: transparent;
+}
+.button--primary.button--line span {
   color: var(--color-primary-background);
 }
-.button--primary.button__line:before {
+.button--primary.button--line:before {
   background-color: var(--color-primary-background);
 }
-.button--primary.button__line:hover {
-  background-color: var(--color-primary-text);
+.button--primary.button--line:hover,
+.button--primary.button--line:hover span {
+  color: var(--color-primary-text);
 }
 .button--secondary {
   background-color: var(--color-secondary-background);
@@ -70,14 +77,19 @@
 .button--secondary:hover {
   background-color: var(--color-secondary-hover);
 }
-.button--secondary.button__line span {
+.button--secondary.button--line {
+  background-color: transparent;
+  border-color: transparent;
+}
+.button--secondary.button--line span {
   color: var(--color-secondary-background);
 }
-.button--secondary.button__line:before {
+.button--secondary.button--line:before {
   background-color: var(--color-secondary-background);
 }
-.button--secondary.button__line:hover {
-  background-color: var(--color-secondary-text);
+.button--secondary.button--line:hover,
+.button--secondary.button--line:hover span {
+  color: var(--color-secondary-text);
 }
 .button--white {
   background-color: var(--color-white-background);
@@ -87,14 +99,19 @@
 .button--white:hover {
   background-color: var(--color-white-hover);
 }
-.button--white.button__line span {
+.button--white.button--line {
+  background-color: transparent;
+  border-color: transparent;
+}
+.button--white.button--line span {
   color: var(--color-white-background);
 }
-.button--white.button__line:before {
+.button--white.button--line:before {
   background-color: var(--color-white-background);
 }
-.button--white.button__line:hover {
-  background-color: var(--color-white-text);
+.button--white.button--line:hover,
+.button--white.button--line:hover span {
+  color: var(--color-white-text);
 }
 .button--light {
   background-color: var(--color-light-background);
@@ -104,14 +121,19 @@
 .button--light:hover {
   background-color: var(--color-light-hover);
 }
-.button--light.button__line span {
+.button--light.button--line {
+  background-color: transparent;
+  border-color: transparent;
+}
+.button--light.button--line span {
   color: var(--color-light-background);
 }
-.button--light.button__line:before {
+.button--light.button--line:before {
   background-color: var(--color-light-background);
 }
-.button--light.button__line:hover {
-  background-color: var(--color-light-text);
+.button--light.button--line:hover,
+.button--light.button--line:hover span {
+  color: var(--color-light-text);
 }
 .button--grey {
   background-color: var(--color-grey-background);
@@ -121,14 +143,19 @@
 .button--grey:hover {
   background-color: var(--color-grey-hover);
 }
-.button--grey.button__line span {
+.button--grey.button--line {
+  background-color: transparent;
+  border-color: transparent;
+}
+.button--grey.button--line span {
   color: var(--color-grey-background);
 }
-.button--grey.button__line:before {
+.button--grey.button--line:before {
   background-color: var(--color-grey-background);
 }
-.button--grey.button__line:hover {
-  background-color: var(--color-grey-text);
+.button--grey.button--line:hover,
+.button--grey.button--line:hover span {
+  color: var(--color-grey-text);
 }
 .button--dark {
   background-color: var(--color-dark-background);
@@ -138,14 +165,19 @@
 .button--dark:hover {
   background-color: var(--color-dark-hover);
 }
-.button--dark.button__line span {
+.button--dark.button--line {
+  background-color: transparent;
+  border-color: transparent;
+}
+.button--dark.button--line span {
   color: var(--color-dark-background);
 }
-.button--dark.button__line:before {
+.button--dark.button--line:before {
   background-color: var(--color-dark-background);
 }
-.button--dark.button__line:hover {
-  background-color: var(--color-dark-text);
+.button--dark.button--line:hover,
+.button--dark.button--line:hover span {
+  color: var(--color-dark-text);
 }
 .button--confirm {
   background-color: var(--color-confirm-background);
@@ -155,14 +187,19 @@
 .button--confirm:hover {
   background-color: var(--color-confirm-hover);
 }
-.button--confirm.button__line span {
+.button--confirm.button--line {
+  background-color: transparent;
+  border-color: transparent;
+}
+.button--confirm.button--line span {
   color: var(--color-confirm-background);
 }
-.button--confirm.button__line:before {
+.button--confirm.button--line:before {
   background-color: var(--color-confirm-background);
 }
-.button--confirm.button__line:hover {
-  background-color: var(--color-confirm-text);
+.button--confirm.button--line:hover,
+.button--confirm.button--line:hover span {
+  color: var(--color-confirm-text);
 }
 .button--warning {
   background-color: var(--color-warning-background);
@@ -172,14 +209,19 @@
 .button--warning:hover {
   background-color: var(--color-warning-hover);
 }
-.button--warning.button__line span {
+.button--warning.button--line {
+  background-color: transparent;
+  border-color: transparent;
+}
+.button--warning.button--line span {
   color: var(--color-warning-background);
 }
-.button--warning.button__line:before {
+.button--warning.button--line:before {
   background-color: var(--color-warning-background);
 }
-.button--warning.button__line:hover {
-  background-color: var(--color-warning-text);
+.button--warning.button--line:hover,
+.button--warning.button--line:hover span {
+  color: var(--color-warning-text);
 }
 .button--danger {
   background-color: var(--color-danger-background);
@@ -189,14 +231,19 @@
 .button--danger:hover {
   background-color: var(--color-danger-hover);
 }
-.button--danger.button__line span {
+.button--danger.button--line {
+  background-color: transparent;
+  border-color: transparent;
+}
+.button--danger.button--line span {
   color: var(--color-danger-background);
 }
-.button--danger.button__line:before {
+.button--danger.button--line:before {
   background-color: var(--color-danger-background);
 }
-.button--danger.button__line:hover {
-  background-color: var(--color-danger-text);
+.button--danger.button--line:hover,
+.button--danger.button--line:hover span {
+  color: var(--color-danger-text);
 }
 .button--help {
   background-color: var(--color-help-background);
@@ -206,12 +253,17 @@
 .button--help:hover {
   background-color: var(--color-help-hover);
 }
-.button--help.button__line span {
+.button--help.button--line {
+  background-color: transparent;
+  border-color: transparent;
+}
+.button--help.button--line span {
   color: var(--color-help-background);
 }
-.button--help.button__line:before {
+.button--help.button--line:before {
   background-color: var(--color-help-background);
 }
-.button--help.button__line:hover {
-  background-color: var(--color-help-text);
+.button--help.button--line:hover,
+.button--help.button--line:hover span {
+  color: var(--color-help-text);
 }
