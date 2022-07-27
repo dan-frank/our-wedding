@@ -11,6 +11,7 @@ import CoupleHighlight from "./components/couple-highlight";
 import ImageBanner from "./components/banner/image";
 import Message from "./components/message";
 import Cards from "./components/cards";
+import Footer from "./components/footer";
 
 function App() {
   return (
@@ -131,22 +132,7 @@ function App() {
                   />
                   <Spacer size={300} />
 
-                  <div class="footer">
-                    <p class="font-sans-serif m-y-none">
-                      Designed and developed by Daniel Lucas
-                    </p>
-
-                    <p class="font-sans-serif m-y-none">
-                      Download from{" "}
-                      <a
-                        href="https://github.com/dan-frank/our_wedding"
-                        target="_blank"
-                        class="button-link"
-                      >
-                        <i class="fab fa-github"></i> GitHub
-                      </a>
-                    </p>
-                  </div>
+                  <Footer />
                 </>
               }
             />
