@@ -13,11 +13,3 @@
     width: calc(var(--container-desktop-mobile) + (10px * 2));
   }
 }
-
-.content-top {
-  background: var(--gradient-blue-pink);
-}
-
-.content-bottom {
-  background: var(--gradient-pink-blue);
-}
