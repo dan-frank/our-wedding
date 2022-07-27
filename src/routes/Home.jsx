@@ -22,7 +22,13 @@ const HomeRoute = () => {
         position="top"
         children={
           <>
-            <Banner />
+            <Banner
+              image={{
+                url: "/images/kiss-small.jpg",
+                alt: "Bride and groom kiss",
+              }}
+              title="The Perfect Day"
+            />
             <Spacer size={200} />
             <ContentCard
               title="The Happy Couple"

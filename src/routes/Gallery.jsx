@@ -13,7 +13,13 @@ const GalleryRoute = () => {
         position="top"
         children={
           <>
-            <Banner />
+            <Banner
+              image={{
+                url: "images/cheers-small.jpg",
+                alt: "Bride and groom cheers",
+              }}
+              title="A Gallery Of Memories"
+            />
           </>
         }
       />
