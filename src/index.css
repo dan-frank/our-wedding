@@ -40,10 +40,11 @@
   --color-orange-300: #ff9500ff;
   --color-orange-400: #ff9f0aff;
 
-  --color-pink-100: #f8dae9;
-  --color-pink-200: #f4c2d7;
-  --color-pink-300: #efb0c9;
-  --color-pink-400: #e1daf8;
+  --color-pink-100: #e1daf8;
+  --color-pink-200: #f8dae9;
+  --color-pink-300: #f4c2d7;
+  --color-pink-400: #efb0c9;
+  --color-pink-500: #e686ac;
 
   --color-purple-300: #af52deff;
   --color-purple-400: #bf5af2ff;
@@ -64,8 +65,8 @@
   --color-primary-hover: var(--color-blue-400);
   --color-primary-text: var(--color-greyscale-50);
 
-  --color-secondary-background: var(--color-pink-300);
-  --color-secondary-hover: var(--color-pink-400);
+  --color-secondary-background: var(--color-pink-400);
+  --color-secondary-hover: var(--color-pink-500);
   --color-secondary-text: var(--color-greyscale-50);
 
   --color-white-background: var(--color-greyscale-50);
@@ -103,12 +104,12 @@
   --gradient-blue-pink: linear-gradient(
     180deg,
     var(--color-blue-100) 0%,
-    var(--color-pink-400) 100%
+    var(--color-pink-100) 100%
   );
   --gradient-pink-blue: linear-gradient(
     0,
     var(--color-blue-100) 0%,
-    var(--color-pink-400) 100%
+    var(--color-pink-100) 100%
   );
 
   /*

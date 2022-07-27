@@ -1,12 +1,20 @@
 .button {
   transition: var(--transition-100);
   display: inline-block;
+  padding: 0.75rem 1.25rem;
   background: var(--color-light-background);
-  color: var(--color-light-text);
   border: 1px solid var(--color-light-background);
   border-radius: 0;
+  color: var(--color-light-text);
   text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
   position: relative;
+}
+.button--line {
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
 }
 .button--line span {
   position: relative;
@@ -18,12 +26,12 @@
 .button--line:before {
   content: "";
   position: absolute;
-  left: -10px;
-  bottom: -10px;
+  left: -0.375rem;
+  bottom: -0.375rem;
   z-index: 5;
   transition: var(--transition-100);
   display: block;
-  width: calc(100% + 20px);
+  width: calc(100% + 0.75rem);
   height: 1px;
   background: var(--color-white-background);
 }
@@ -31,7 +39,7 @@
   color: var(--color-dark-background);
 }
 .button--line:hover:before {
-  height: calc(100% + 20px);
+  height: calc(100% + 0.75rem);
 }
 .button--arrow:after {
   content: "\f178";
@@ -54,6 +62,7 @@
 }
 .button--primary:hover {
   background-color: var(--color-primary-hover);
+  border-color: var(--color-primary-hover);
 }
 .button--primary.button--line {
   background-color: transparent;
@@ -69,6 +78,7 @@
 .button--primary.button--line:hover span {
   color: var(--color-primary-text);
 }
+
 .button--secondary {
   background-color: var(--color-secondary-background);
   color: var(--color-secondary-text);
@@ -76,6 +86,7 @@
 }
 .button--secondary:hover {
   background-color: var(--color-secondary-hover);
+  border-color: var(--color-secondary-hover);
 }
 .button--secondary.button--line {
   background-color: transparent;
@@ -91,6 +102,7 @@
 .button--secondary.button--line:hover span {
   color: var(--color-secondary-text);
 }
+
 .button--white {
   background-color: var(--color-white-background);
   color: var(--color-white-text);
@@ -98,6 +110,7 @@
 }
 .button--white:hover {
   background-color: var(--color-white-hover);
+  border-color: var(--color-white-hover);
 }
 .button--white.button--line {
   background-color: transparent;
@@ -113,6 +126,7 @@
 .button--white.button--line:hover span {
   color: var(--color-white-text);
 }
+
 .button--light {
   background-color: var(--color-light-background);
   color: var(--color-light-text);
@@ -120,6 +134,7 @@
 }
 .button--light:hover {
   background-color: var(--color-light-hover);
+  border-color: var(--color-light-hover);
 }
 .button--light.button--line {
   background-color: transparent;
@@ -135,6 +150,7 @@
 .button--light.button--line:hover span {
   color: var(--color-light-text);
 }
+
 .button--grey {
   background-color: var(--color-grey-background);
   color: var(--color-grey-text);
@@ -157,6 +173,7 @@
 .button--grey.button--line:hover span {
   color: var(--color-grey-text);
 }
+
 .button--dark {
   background-color: var(--color-dark-background);
   color: var(--color-dark-text);
@@ -164,6 +181,7 @@
 }
 .button--dark:hover {
   background-color: var(--color-dark-hover);
+  border-color: var(--color-dark-hover);
 }
 .button--dark.button--line {
   background-color: transparent;
@@ -179,6 +197,7 @@
 .button--dark.button--line:hover span {
   color: var(--color-dark-text);
 }
+
 .button--confirm {
   background-color: var(--color-confirm-background);
   color: var(--color-confirm-text);
@@ -186,6 +205,7 @@
 }
 .button--confirm:hover {
   background-color: var(--color-confirm-hover);
+  border-color: var(--color-confirm-hover);
 }
 .button--confirm.button--line {
   background-color: transparent;
@@ -201,6 +221,7 @@
 .button--confirm.button--line:hover span {
   color: var(--color-confirm-text);
 }
+
 .button--warning {
   background-color: var(--color-warning-background);
   color: var(--color-warning-text);
@@ -208,6 +229,7 @@
 }
 .button--warning:hover {
   background-color: var(--color-warning-hover);
+  border-color: var(--color-warning-hover);
 }
 .button--warning.button--line {
   background-color: transparent;
@@ -223,6 +245,7 @@
 .button--warning.button--line:hover span {
   color: var(--color-warning-text);
 }
+
 .button--danger {
   background-color: var(--color-danger-background);
   color: var(--color-danger-text);
@@ -230,6 +253,7 @@
 }
 .button--danger:hover {
   background-color: var(--color-danger-hover);
+  border-color: var(--color-danger-hover);
 }
 .button--danger.button--line {
   background-color: transparent;
@@ -245,6 +269,7 @@
 .button--danger.button--line:hover span {
   color: var(--color-danger-text);
 }
+
 .button--help {
   background-color: var(--color-help-background);
   color: var(--color-help-text);
@@ -252,6 +277,7 @@
 }
 .button--help:hover {
   background-color: var(--color-help-hover);
+  border-color: var(--color-help-hover);
 }
 .button--help.button--line {
   background-color: transparent;
