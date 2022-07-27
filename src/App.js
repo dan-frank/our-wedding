@@ -60,104 +60,100 @@ function App() {
           size="is-16by9"
         />
 
-        <div class="content-bottom">
-          <Message
-            message={
-              "We just want to thank everyone for coming and for supporting us for the " +
-              "start of our greatest adventure"
-            }
-          />
-
-          {/* <!--        Card Title--> */}
-          <div class="content-card-title-container">
-            <h2 class="font-serif-2 font-size-600 font-pink-200 content-card-title">
-              Take a Second to Remember
-            </h2>
-          </div>
-
-          {/* <!--        Top Card--> */}
-          <div class="content-main content-card">
-            <div class="container">
-              <Spacer size={300} />
-
-              <Cards
-                cards={[
-                  {
-                    image: {
-                      url: "images/group1-small.jpg",
-                      alt: "Bride, groom, groom's family and bridesmaids",
-                      size: "is-16by9",
-                    },
-                    title: "Our Gallery",
-                    text:
-                      "A collection of our favourite images from the morning " +
-                      "all the way through to the embarrassing evening.",
-                    url: "/gallery.html",
-                  },
-                  {
-                    image: {
-                      url: "images/venue-small.jpg",
-                      alt: "The entrance to farnham castle",
-                      size: "is-16by9",
-                    },
-                    title: "The Venue",
-                    text:
-                      "Walk through the halls once again. Remind yourself of " +
-                      "the castle that has stood tall and strong for over 800 " +
-                      "years.",
-                    url: "javascript:alert('Coming Soon!');",
-                  },
-                  {
-                    image: {
-                      url: "images/food1-small.jpg",
-                      alt: "Picture of a desert served on the night",
-                      size: "is-16by9",
-                    },
-                    title: "The Menu",
-                    text:
-                      " Some wonderful food was served on our special day. If " +
-                      "you're thinking of recreating it at home, this is what " +
-                      "you ate.",
-                    url: "javascript:alert('Coming Soon!');",
-                  },
-                  {
-                    image: {
-                      url: "images/group2-small.jpg",
-                      alt: "Bride, groom, groom's family and bridesmaids",
-                      size: "is-16by9",
-                    },
-                    title: "The Guest List",
-                    text:
-                      "Made a once in a lifetime friend but forgot their name " +
-                      "because you had too much to drink?",
-                    url: "javascript:alert('Coming Soon!');",
-                  },
-                ]}
+        <Content
+          position="bottom"
+          children={
+            <>
+              <Message
+                message={
+                  "We just want to thank everyone for coming and for supporting us for the " +
+                  "start of our greatest adventure"
+                }
               />
+              <ContentCard
+                title="Take a Second to Remember"
+                children={
+                  <>
+                    <Spacer size={300} />
 
-              <div class="page-links">
-                <Spacer size={300} />
+                    <Cards
+                      cards={[
+                        {
+                          image: {
+                            url: "images/group1-small.jpg",
+                            alt: "Bride, groom, groom's family and bridesmaids",
+                            size: "is-16by9",
+                          },
+                          title: "Our Gallery",
+                          text:
+                            "A collection of our favourite images from the morning " +
+                            "all the way through to the embarrassing evening.",
+                          url: "/gallery.html",
+                        },
+                        {
+                          image: {
+                            url: "images/venue-small.jpg",
+                            alt: "The entrance to farnham castle",
+                            size: "is-16by9",
+                          },
+                          title: "The Venue",
+                          text:
+                            "Walk through the halls once again. Remind yourself of " +
+                            "the castle that has stood tall and strong for over 800 " +
+                            "years.",
+                          url: "javascript:alert('Coming Soon!');",
+                        },
+                        {
+                          image: {
+                            url: "images/food1-small.jpg",
+                            alt: "Picture of a desert served on the night",
+                            size: "is-16by9",
+                          },
+                          title: "The Menu",
+                          text:
+                            " Some wonderful food was served on our special day. If " +
+                            "you're thinking of recreating it at home, this is what " +
+                            "you ate.",
+                          url: "javascript:alert('Coming Soon!');",
+                        },
+                        {
+                          image: {
+                            url: "images/group2-small.jpg",
+                            alt: "Bride, groom, groom's family and bridesmaids",
+                            size: "is-16by9",
+                          },
+                          title: "The Guest List",
+                          text:
+                            "Made a once in a lifetime friend but forgot their name " +
+                            "because you had too much to drink?",
+                          url: "javascript:alert('Coming Soon!');",
+                        },
+                      ]}
+                    />
+                    <Spacer size={300} />
 
-                <div class="footer">
-                  <p class="font-sans-serif m-y-none">
-                    Designed and developed by Daniel Lucas
-                  </p>
+                    <div class="footer">
+                      <p class="font-sans-serif m-y-none">
+                        Designed and developed by Daniel Lucas
+                      </p>
 
-                  <p class="font-sans-serif m-y-none">
-                    Download from{" "}
-                    <a
-                      href="https://github.com/dan-frank/our_wedding"
-                      target="_blank"
-                      class="button-link"
-                    >
-                      <i class="fab fa-github"></i> GitHub
-                    </a>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+                      <p class="font-sans-serif m-y-none">
+                        Download from{" "}
+                        <a
+                          href="https://github.com/dan-frank/our_wedding"
+                          target="_blank"
+                          class="button-link"
+                        >
+                          <i class="fab fa-github"></i> GitHub
+                        </a>
+                      </p>
+                    </div>
+                  </>
+                }
+              />
+            </>
+          }
+        />
       </div>
 
       <div id="popup-video" class="popup">
