@@ -2,17 +2,17 @@ import React from "react";
 
 import "normalize.css";
 
-import Nav from "./components/nav";
-import Content from "./components/content";
+import Button from "./components/button";
 import Banner from "./components/banner";
+import Cards from "./components/cards";
+import Content from "./components/content";
 import ContentCard from "./components/content/content-card";
-import Spacer from "./components/spacer";
 import CoupleHighlight from "./components/couple-highlight";
+import Footer from "./components/footer";
 import ImageBanner from "./components/banner/image";
 import Message from "./components/message";
-import Cards from "./components/cards";
-import Footer from "./components/footer";
-import Button from "./components/button";
+import Nav from "./components/nav";
+import Spacer from "./components/spacer";
 
 function App() {
   return (
