@@ -1,6 +1,8 @@
 import React from "react";
 import "./couple-highlight.css";
 
+import Image from "../image";
+
 const CoupleHighlight = ({ initials, image, title, name, button }) => {
   return (
     <div class={"happy-person happy-person--" + title}>
@@ -11,9 +13,7 @@ const CoupleHighlight = ({ initials, image, title, name, button }) => {
       </div>
 
       <div class="happy-person__image">
-        <div class="image-shape rec-3-by-4">
-          <img src={image} alt={"The " + title} />
-        </div>
+        <Image image={image} alt={"The " + title} size="rec-3-by-4" />
       </div>
 
       <div class="happy-person__name">
