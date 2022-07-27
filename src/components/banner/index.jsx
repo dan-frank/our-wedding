@@ -3,7 +3,7 @@ import "./banner.css";
 
 import Button from "../button";
 import { BsPlayFill } from "react-icons/bs";
-import Popup from "../popup";
+import PopupWeddingVideo from "../popup/wedding-video";
 
 const Banner = () => {
   const [showPopup, setShowPopup] = useState(false);
@@ -23,21 +23,7 @@ const Banner = () => {
           >
             <BsPlayFill />
           </div>
-          {showPopup ? (
-            <Popup
-              children={
-                <div class="image is-16by9">
-                  <video id="weddingVideo" controls>
-                    <source src="videos/wedding.mp4" type="video/mp4" />
-                    <source src="videos/wedding.webm" type="video/webm" />
-                    <source src="videos/wedding.m4v" type="video/m4v" />
-                    Your browser does not support the video tag.
-                  </video>
-                </div>
-              }
-              setShowPopup={setShowPopup}
-            />
-          ) : null}
+          {showPopup ? <PopupWeddingVideo setShowPopup={setShowPopup} /> : null}
 
           <div class="banner-image">
             <div class="image-shape square">
