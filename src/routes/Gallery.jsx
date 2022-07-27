@@ -28,6 +28,7 @@ const GalleryRoute = () => {
               children={
                 <>
                   <Video
+                    title="Our Video"
                     size="is-16by9"
                     videos={[
                       {
