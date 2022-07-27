@@ -107,6 +107,11 @@
   --aspect-4by3: 75%;
   --aspect-3by2: 66.66%;
   --aspect-8by5: 62.5%;
+
+  /*
+   * Nav
+   */
+  --nav-height: 80px;
 }
 
 body {
