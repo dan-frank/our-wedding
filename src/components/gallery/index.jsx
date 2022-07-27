@@ -1,14 +1,21 @@
 import React from "react";
 import "./gallery.css";
 
-import Image from "../image";
+import Lightbox from "../image/lightbox";
 
 const Gallery = ({ size, images }) => {
   return (
     <div className="images">
       {images.map((image) => {
         image.size = size;
-        return <Image url={image.url} alt={image.alt} size={image.size} />;
+        return (
+          <Lightbox
+            url={image.url}
+            alt={image.alt}
+            size={image.size}
+            lightbox={image.lightbox}
+          />
+        );
       })}
     </div>
   );
