@@ -3,7 +3,7 @@ import "./image.css";
 
 const Image = ({ image, alt, size }) => {
   return (
-    <div class={"image-shape " + size}>
+    <div class={"image " + size}>
       <img src={image} alt={alt} />
     </div>
   );
