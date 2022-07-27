@@ -1,8 +1,14 @@
 import React from "react";
 import "./image.css";
 
-const Image = () => {
-  return <div></div>;
+import Image from "../image";
+
+const ImageBanner = ({ url, alt, size }) => {
+  return (
+    <div class="image-banner">
+      <Image image={url} alt={alt} size={size} />
+    </div>
+  );
 };
 
-export default Image;
+export default ImageBanner;
