@@ -7,7 +7,7 @@ import { BsArrowRight } from "react-icons/bs";
 const Card = ({ image, title, text, url }) => {
   return (
     <div class="card">
-      <Image image={image.url} alt={image.alt} size={image.size} />
+      <Image url={image.url} alt={image.alt} size={image.size} />
 
       <a class="card__content" href={url}>
         <h2 class="card__content__title font-serif-1 font-size-300 m-t-none m-b-sm">

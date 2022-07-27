@@ -1,10 +1,10 @@
 import React from "react";
 import "./image.css";
 
-const Image = ({ image, alt, size }) => {
+const Image = ({ url, alt, size }) => {
   return (
     <div class={"image " + size}>
-      <img src={image} alt={alt} />
+      <img src={url} alt={alt} />
     </div>
   );
 };

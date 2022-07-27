@@ -13,7 +13,7 @@ const CoupleHighlight = ({ initials, image, title, name, button }) => {
       </div>
 
       <div class="happy-person__image">
-        <Image image={image} alt={"The " + title} size="is-3by4" />
+        <Image url={image} alt={"The " + title} size="is-3by4" />
       </div>
 
       <div class="happy-person__name">
