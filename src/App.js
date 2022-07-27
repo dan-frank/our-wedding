@@ -1,9 +1,10 @@
-import React from "react"
+import React from "react";
 
 import "normalize.css";
 
 import Nav from "./components/nav";
 import Banner from "./components/banner";
+import CoupleHighlight from "./components/couple-highlight";
 
 function App() {
   return (
@@ -29,58 +30,27 @@ function App() {
 
               {/* <!--                Happy Couple--> */}
               <div class="happy-couple">
-                {/* <!--                    Bride--> */}
-                <div class="happy-person bride">
-                  <div class="happy-person-initials">
-                    <p class="font-size-700 font-pink-300 font-serif-2 m-none">
-                      BL
-                    </p>
-                  </div>
-
-                  <div class="happy-person-image m-r-md m-none-mb-sm">
-                    <div class="image-shape rec-3-by-4">
-                      <img src="images/becca-small.jpg" />
-                    </div>
-                  </div>
-
-                  <div class="happy-person-name">
-                    <p class="font-sans-serif happy-person-title">The Bride</p>
-                    <h3 class="font-serif-1 font-size-600 m-y-sm">
-                      Becca Lucas
-                    </h3>
+                <CoupleHighlight
+                  initials="BL"
+                  image="images/becca-small.jpg"
+                  title="bride"
+                  name="Becca Lucas"
+                  button={
                     <a href="/" class="button-whole-pink font-sans-serif">
                       The Groom
                     </a>
-                  </div>
-                </div>
+                  }
+                />
 
                 {/* <!--                    Spacer--> */}
                 <div class="spacer-500"></div>
 
-                {/* <!--                    Groom--> */}
-                <div class="happy-person groom">
-                  <div class="happy-person-initials">
-                    <p class="font-size-700 font-pink-300 font-serif-2 m-none">
-                      DL
-                    </p>
-                  </div>
-
-                  <div class="happy-person-name">
-                    <p class="font-sans-serif happy-person-title">The Groom</p>
-                    <h3 class="font-serif-1 font-size-600 m-y-sm">
-                      Daniel Lucas
-                    </h3>
-                    <a href="/" class="button-whole-pink font-sans-serif">
-                      The Gallery
-                    </a>
-                  </div>
-
-                  <div class="happy-person-image m-l-md m-none-mb-sm">
-                    <div class="image-shape rec-3-by-4">
-                      <img src="images/dan-small.jpg" />
-                    </div>
-                  </div>
-                </div>
+                <CoupleHighlight
+                  initials="DL"
+                  image="images/dan-small.jpg"
+                  title="groom"
+                  name="Daniel Lucas"
+                />
               </div>
             </div>
           </div>

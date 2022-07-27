@@ -1,0 +1,52 @@
+.image {
+  position: relative;
+  width: 100%;
+}
+.image.is-square {
+  padding-bottom: 100%;
+}
+.image.is-16by9 {
+  padding-bottom: 56.25%;
+}
+.image.is-16by3 {
+  padding-bottom: 18.75%;
+}
+.image.is-16by6 {
+  padding-bottom: 37.5%;
+}
+.image.is-9by16 {
+  padding-bottom: 177.78%;
+}
+.image.is-4by3 {
+  padding-bottom: 75%;
+}
+.image.is-3by4 {
+  padding-bottom: 133.34%;
+}
+.image.is-1by350px {
+  padding-bottom: 350px;
+}
+.image img,
+.image iframe,
+.image video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 10;
+}
+.image .image-shape-content {
+  position: absolute;
+  left: 50%;
+  bottom: 1.5rem;
+  transform: translateX(-50%);
+  max-width: 100%;
+  z-index: 20;
+}
+.image--object-contain img,
+.image--object-contain iframe,
+.image--object-contain video {
+  object-fit: contain;
+}
