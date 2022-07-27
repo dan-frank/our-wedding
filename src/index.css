@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 
 :root {
   /*
@@ -57,10 +57,6 @@
   --color-yellow-300: #ffcc00ff;
   --color-yellow-400: #ffd60aff;
 
-  --color-dark-text: var(--color-greyscale-50);
-  --color-dark-backround: var(--color-greyscale-1000);
-  --color-dark-backround-rgb: var(--color-greyscale-1000-rgb);
-
   /*
    * Access colours
    */
@@ -83,6 +79,10 @@
   --color-light-background: var(--color-greyscale-100);
   --color-light-hover: var(--color-greyscale-300);
   --color-light-text: var(--color-blue-300);
+
+  --color-white-background: var(--color-greyscale-50);
+  --color-white-hover: var(--color-greyscale-100);
+  --color-white-text: var(--color-blue-300);
 
   --color-confirm-background: var(--color-green-300);
   --color-confirm-hover: var(--color-green-400);
@@ -295,21 +295,27 @@ code {
   font-size: var(--font-size-700);
 }
 
-body, h1, h2, h3, h4, h5, p {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
   font-family: var(--font-sans-serif);
 }
 
-body, p {
+body,
+p {
   font-size: var(--font-size-100);
 }
 
 .font-light {
   color: var(--color-light-background);
-
 }
 
 .font-dark {
-  color:var(--color-dark-backround);
+  color: var(--color-dark-backround);
 }
 
 .font-pink-200 {
@@ -320,8 +326,8 @@ body, p {
   color: var(--color-pink-300);
 }
 
-.font-shadow{
-  text-shadow: 0 2px 4px rgba(0,0,0,.16);
+.font-shadow {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.16);
 }
 
 .font-center {
