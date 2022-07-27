@@ -1,7 +1,7 @@
 import React from "react";
 import "./nav.css";
 
-function Nav() {
+const Nav = () => {
   return (
     <nav class="nav">
       <div class="container">
@@ -27,6 +27,6 @@ function Nav() {
       </div>
     </nav>
   );
-}
+};
 
 export default Nav;
