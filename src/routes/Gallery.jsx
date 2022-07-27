@@ -45,8 +45,9 @@ const GalleryRoute = () => {
                       },
                     ]}
                   />
-                  <Spacer size={300} />
+                  <Spacer size={400} />
                   <Gallery
+                    title="Pre-Ceremony"
                     size="is-3by4"
                     images={[
                       {
@@ -171,8 +172,9 @@ const GalleryRoute = () => {
                       },
                     ]}
                   />
-                  <Spacer size={300} />
+                  <Spacer size={400} />
                   <Gallery
+                    title="Ceremony"
                     size="is-3by4"
                     images={[
                       {
@@ -346,8 +348,9 @@ const GalleryRoute = () => {
                       // { url: "images/gallery/2-ceremony/1900-small.jpg", alt: "", lightbox: { url: "images/gallery/2-ceremony/1900.jpg", group: "wedding" } },
                     ]}
                   />
-                  <Spacer size={300} />
+                  <Spacer size={400} />
                   <Gallery
+                    title="Intermission"
                     size="is-3by4"
                     images={[
                       {
@@ -864,8 +867,9 @@ const GalleryRoute = () => {
                       },
                     ]}
                   />
-                  <Spacer size={300} />
+                  <Spacer size={400} />
                   <Gallery
+                    title="Wedding Breakfast"
                     size="is-3by4"
                     images={[
                       {
@@ -1158,8 +1162,9 @@ const GalleryRoute = () => {
                       },
                     ]}
                   />
-                  <Spacer size={300} />
+                  <Spacer size={400} />
                   <Gallery
+                    title="Party"
                     size="is-3by4"
                     images={[
                       {
@@ -1596,8 +1601,9 @@ const GalleryRoute = () => {
                       },
                     ]}
                   />
-                  <Spacer size={300} />
+                  <Spacer size={400} />
                   <Gallery
+                    title="Next Day"
                     size="is-3by4"
                     images={[
                       {
