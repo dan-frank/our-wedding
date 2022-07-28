@@ -9,7 +9,7 @@ root.render(
   <>
     <head>
       <meta charset="UTF-8" />
-      <title>Dan & Becca's Wedding</title>
+      <title>Dan &amp; Becca's Wedding</title>
 
       <link
         href="https://fonts.googleapis.com/css?family=Great+Vibes|Lora|Open+Sans&display=swap"
