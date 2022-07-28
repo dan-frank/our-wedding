@@ -183,14 +183,13 @@
   /*
    * Container
    */
-  --container-desktop: 950px;
-  --container-desktop-mobile: 85%;
-
+  --container: 950px;
   --container-message: 800px;
-  --container-message-tablet: 70%;
 
-  --card-padding: 70px;
-  --card-padding-tablet: 50px;
+  /*
+   * Content
+   */
+  --content-card-padding: 70px;
 
   /*
    * Transition
@@ -222,8 +221,23 @@
   --breakpoint-mobile-sml: 584px;
 }
 
-@media only screen and (max-width: var(--breakpoint-tablet)) {
+/* tablet */
+@media only screen and (max-width: 1200px) {
   :root {
+    /*
+     * Container
+     */
+    --container: 800px;
+    --container-message: 650px;
+
+    /*
+     * Content
+     */
+    --content-card-padding: 50px;
+
+    /*
+     * Spacer
+     */
     --spacer-200: 30px;
     --spacer-300: 55px;
     --spacer-400: 65px;
@@ -231,13 +245,61 @@
     --spacer-600: 120px;
   }
 }
-@media only screen and (max-width: var(--breakpoint-mobile-md)) {
+
+/* mobile large */
+@media only screen and (max-width: 930px) {
   :root {
+    /*
+     * Spacer
+     */
     --spacer-200: 15px;
     --spacer-300: 20px;
     --spacer-400: 30px;
     --spacer-500: 40px;
     --spacer-600: 80px;
+
+    /*
+     * Container
+     */
+    --container: 700px;
+    --container-message: 500px;
+
+    /*
+     * Content
+     */
+    --content-card-padding: 30px;
+  }
+}
+
+/* mobile standard */
+@media only screen and (max-width: 767px) {
+  :root {
+    /*
+     * Container
+     */
+    --container: 80%;
+    --container-message: 70%;
+
+    /*
+      * Content
+      */
+    --content-card-padding: 20px;
+  }
+}
+
+/* mobile small */
+@media only screen and (max-width: 584px) {
+  :root {
+    /*
+     * Container
+     */
+    --container: 70%;
+    --container-message: 70%;
+
+    /*
+      * Content
+      */
+    --content-card-padding: 20px;
   }
 }
 
@@ -350,10 +412,5 @@ p {
 
 .container {
   margin: 0 auto;
-  width: var(--container-desktop);
-}
-@media only screen and (max-width: var(--breakpoint-tablet)) {
-  .container {
-    width: var(--container-desktop-mobile);
-  }
+  width: var(--container);
 }
