@@ -1,15 +1,16 @@
 import React from "react";
 import "./card.css";
 
-import Image from "../image";
 import { BsArrowRight } from "react-icons/bs";
+import Image from "../image";
+import { Link } from "react-router-dom";
 
 const Card = ({ image, title, text, url }) => {
   return (
     <div class="card">
       <Image url={image.url} alt={image.alt} size={image.size} />
 
-      <a class="card__content" href={url}>
+      <Link to={url} className="card__content">
         <h2 class="card__content__title font-serif-1 font-size-300 m-t-none m-b-sm">
           {title}
         </h2>
@@ -19,7 +20,7 @@ const Card = ({ image, title, text, url }) => {
           </p>
           <BsArrowRight />
         </div>
-      </a>
+      </Link>
     </div>
   );
 };
