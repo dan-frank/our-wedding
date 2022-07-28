@@ -5,7 +5,7 @@ A simple static wedding website rebuilt in React.
 This website was built to commemorate the union and wedding of Daniel &amp; Becca Lucas.
 It's aim, to be used to share our weddings photos, videos, venue and other misc. items with friends and family.
 
-[Landing page, above the fold](/README/above-the-fold.png)
+![Landing page, above the fold](README/above-the-fold.png)
 
 ## Technologies Used
 
