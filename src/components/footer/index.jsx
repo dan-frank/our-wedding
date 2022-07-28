@@ -12,7 +12,7 @@ const Footer = () => {
       </p>
 
       <p class="font-sans-serif m-y-none">
-        Download website from{" "}
+        Website hosted on{" "}
         <Button
           text={
             <>
