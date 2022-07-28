@@ -40,7 +40,7 @@
   background: var(--color-light-background);
   width: auto;
   height: auto;
-  padding: .4rem;
+  padding: 0.4rem;
   border-radius: var(--radius-rounded);
   position: absolute;
   top: 20%;
@@ -49,7 +49,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: var(--transition-100);
+  transition: var(--transition-200);
 }
 .banner-container .banner-circle-container .banner-circle .play-button svg {
   font-size: var(--font-size-250);
@@ -60,7 +60,7 @@
 }
 .banner-container .banner-circle-container .banner-circle .play-button:before {
   --play-button-before-size: 65px;
-  
+
   content: "";
   position: absolute;
   top: 50%;
