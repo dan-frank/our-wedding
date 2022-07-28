@@ -17,7 +17,7 @@ const Nav = () => {
           <ul class="nav__items">
             <li class="nav__item font-sans-serif">
               <NavLink
-                to="/"
+                to="*"
                 className={({ isActive }) =>
                   "nav__link font-dark" + (isActive ? " nav__link--active" : "")
                 }
