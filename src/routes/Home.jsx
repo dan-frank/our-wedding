@@ -9,14 +9,11 @@ import CoupleHighlight from "../components/couple-highlight";
 import Footer from "../components/footer";
 import ImageBanner from "../components/banner/image";
 import Message from "../components/message";
-import Nav from "../components/nav";
 import Spacer from "../components/spacer";
 
 const HomeRoute = () => {
   return (
     <>
-      <Nav />
-
       <Content
         position="top"
         children={

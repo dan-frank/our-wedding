@@ -3,7 +3,6 @@ import React from "react";
 import Banner from "../components/banner";
 import Content from "../components/content";
 import ContentCard from "../components/content/content-card";
-import Nav from "../components/nav";
 import Spacer from "../components/spacer";
 import Video from "../components/image/video";
 import Gallery from "../components/gallery";
@@ -1594,7 +1593,6 @@ const galleryNextDay = [
 const GalleryRoute = () => {
   return (
     <>
-      <Nav />
       <Content
         position="top"
         children={

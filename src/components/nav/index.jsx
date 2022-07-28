@@ -1,4 +1,6 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
+
 import "./nav.css";
 
 const Nav = () => {
@@ -13,15 +15,31 @@ const Nav = () => {
           </p>
 
           <ul class="nav__items">
-            {/* <li class="nav_item font-sans-serif"><a href="/" class="nav__link active font-dark">Home</a></li> */}
             <li class="nav__item font-sans-serif">
-              <a href="/gallery" class="nav__link font-dark">
-                Gallery
-              </a>
+              <NavLink
+                to="/"
+                className={({ isActive }) =>
+                  "nav__link font-dark" +
+                  (isActive ? " nav__link--active" : null)
+                }
+              >
+                Home
+              </NavLink>
             </li>
-            {/* <li class="nav__item font-sans-serif"><a href="/" class="nav__link font-dark">Guest List</a></li> */}
-            {/* <li class="nav__item font-sans-serif"><a href="/" class="nav__link font-dark">The Venue</a></li> */}
-            {/* <li class="nav__item font-sans-serif"><a href="/" class="nav__link font-dark">The Menu</a></li>*/}
+            <li class="nav__item font-sans-serif">
+              <NavLink
+                to="gallery"
+                className={({ isActive }) =>
+                  "nav__link font-dark" +
+                  (isActive ? " nav__link--active" : null)
+                }
+              >
+                Gallery
+              </NavLink>
+            </li>
+            {/* Guest List */}
+            {/* The Venue */}
+            {/* The Menu*/}
           </ul>
         </div>
       </div>
