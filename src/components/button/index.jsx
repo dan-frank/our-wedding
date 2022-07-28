@@ -1,20 +1,22 @@
 import React from "react";
 import "./button.css";
 
+import { Link } from "react-router-dom";
+
 const Button = ({ text, url, modifiers, blank }) => {
   if (url) {
     if (blank) {
       return (
-        <a href={url} className={modifiers} target="_blank" rel="noreferrer">
+        <Link to={url} className={modifiers} target="_blank" rel="noreferrer">
           {text}
-        </a>
+        </Link>
       );
     }
 
     return (
-      <a href={url} className={modifiers}>
+      <Link to={url} className={modifiers}>
         {text}
-      </a>
+      </Link>
     );
   }
 
