@@ -9,9 +9,9 @@ const Nav = () => {
       <div class="container">
         <div class="nav__content">
           <p class="nav__logo font-serif-2">
-            <a href="/" class="nav__link font-dark">
+            <NavLink to="/" className={"nav__link font-dark"}>
               Dan &amp; Becca
-            </a>
+            </NavLink>
           </p>
 
           <ul class="nav__items">
