@@ -1,5 +1,5 @@
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Route,
   Routes,
   Navigate,
@@ -19,7 +19,7 @@ function App() {
           <Nav />
           <Routes>
             <Route exact path="/" element={<HomeRoute />}></Route>
-            <Route exact path="gallery" element={<GalleryRoute />}></Route>
+            <Route exact path="/gallery" element={<GalleryRoute />}></Route>
             <Route path="*" element={<Navigate to="/" />} />
           </Routes>
         </ScrollToTop>

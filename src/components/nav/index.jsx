@@ -27,7 +27,7 @@ const Nav = () => {
             </li>
             <li class="nav__item font-sans-serif">
               <NavLink
-                to="gallery"
+                to="/gallery"
                 className={({ isActive }) =>
                   "nav__link font-dark" + (isActive ? " nav__link--active" : "")
                 }
