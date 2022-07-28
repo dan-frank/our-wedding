@@ -19,7 +19,8 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b deploy -d build",
+    "add-domain": "echo \"danandbecca.co.uk\" > build/CNAME",
+    "deploy": "npm run add-domain && gh-pages -b deploy -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
