@@ -3,8 +3,8 @@ import React from "react";
 import Banner from "../components/banner";
 import Content from "../components/content";
 import ContentCard from "../components/content/content-card";
+import IFrame from "../components/image/iframe";
 import Spacer from "../components/spacer";
-import Video from "../components/image/video";
 import Gallery from "../components/gallery";
 import Footer from "../components/footer";
 
@@ -1607,23 +1607,10 @@ const GalleryRoute = () => {
             <ContentCard
               children={
                 <>
-                  <Video
+                  <IFrame
                     title="Our Video"
+                    url="https://player.vimeo.com/video/734325722?h=2ce8b63b18&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
                     size="is-16by9"
-                    videos={[
-                      {
-                        url: "videos/wedding.mp4",
-                        type: "video/mp4",
-                      },
-                      {
-                        url: "videos/wedding.webm",
-                        type: "video/webm",
-                      },
-                      {
-                        url: "videos/wedding.m4v",
-                        type: "video/m4v",
-                      },
-                    ]}
                   />
                   <Spacer size={400} />
                   <Gallery
