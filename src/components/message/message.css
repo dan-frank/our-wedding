@@ -2,9 +2,3 @@
   margin: 0 auto;
   width: var(--container-message);
 }
-
-@media only screen and (max-width: var(--breakpoint-tablet)) {
-  .container-message {
-    width: var(--container-message-tablet);
-  }
-}

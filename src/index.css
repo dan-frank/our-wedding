@@ -144,37 +144,6 @@
   --font-size-600: 68px;
   --font-size-700: 300px;
 
-  /* TODO - Replace these with media queries on previously defined font size vars */
-  --font-size-100-sm: 10px;
-  --font-size-200-sm: 12px;
-  --font-size-250-sm: 20px;
-  --font-size-300-sm: 14px;
-  --font-size-350-sm: 20px;
-  --font-size-400-sm: 24px;
-  --font-size-500-sm: 36px;
-  --font-size-600-sm: 42px;
-  --font-size-700-sm: 150px;
-
-  --font-size-100-md: 10px;
-  --font-size-200-md: 12px;
-  --font-size-250-md: 20px;
-  --font-size-300-md: 20px;
-  --font-size-350-md: 24px;
-  --font-size-400-md: 30px;
-  --font-size-500-md: 46px;
-  --font-size-600-md: 58px;
-  --font-size-700-md: 200px;
-
-  --font-size-100-xl: 10px;
-  --font-size-200-xl: 12px;
-  --font-size-250-xl: 20px;
-  --font-size-300-xl: 14px;
-  --font-size-350-xl: 28px;
-  --font-size-400-xl: 22px;
-  --font-size-500-xl: 32px;
-  --font-size-600-xl: 38px;
-  --font-size-700-xl: 90px;
-
   /*
    * Nav
    */
@@ -183,26 +152,19 @@
   /*
    * Container
    */
-  --container-desktop: 950px;
-  --container-desktop-mobile: 85%;
-
+  --container: 950px;
   --container-message: 800px;
-  --container-message-tablet: 70%;
 
-  --card-padding: 70px;
-  --card-padding-tablet: 50px;
+  /*
+   * Content
+   */
+  --content-card-padding: 70px;
 
   /*
    * Transition
    */
-  --transition-100: 0.2s;
-
-  /*
-   * Margin
-   */
-
-  --margin-100: 10px;
-  --margin-300: 40px;
+  --transition-100: 0.15s;
+  --transition-200: 0.2s;
 
   /*
    * Spacer
@@ -212,18 +174,43 @@
   --spacer-400: 120px;
   --spacer-500: 160px;
   --spacer-600: 200px;
-
-  /*
-   * Media Queries
-   */
-  --breakpoint-tablet: 1200px;
-  --breakpoint-mobile: 900px;
-  --breakpoint-mobile-md: 767px;
-  --breakpoint-mobile-sml: 584px;
 }
 
-@media only screen and (max-width: var(--breakpoint-tablet)) {
+/* tablet */
+@media only screen and (max-width: 1200px) {
   :root {
+    /*
+     * Fonts
+     */
+    --font-size-100: 11px;
+    --font-size-200: 14px;
+    --font-size-250: 20px;
+    --font-size-300: 24px;
+    --font-size-350: 28px;
+    --font-size-400: 33px;
+    --font-size-500: 45px;
+    --font-size-600: 60px;
+    --font-size-700: 250px;
+
+    /*
+     * Nav
+     */
+    --nav-height: 75px;
+
+    /*
+     * Container
+     */
+    --container: 800px;
+    --container-message: 650px;
+
+    /*
+     * Content
+     */
+    --content-card-padding: 50px;
+
+    /*
+     * Spacer
+     */
     --spacer-200: 30px;
     --spacer-300: 55px;
     --spacer-400: 65px;
@@ -231,13 +218,115 @@
     --spacer-600: 120px;
   }
 }
-@media only screen and (max-width: var(--breakpoint-mobile-md)) {
+
+/* mobile large */
+@media only screen and (max-width: 930px) {
   :root {
+    /*
+     * Fonts
+     */
+    --font-size-100: 11px;
+    --font-size-200: 14px;
+    --font-size-250: 18px;
+    --font-size-300: 22px;
+    --font-size-350: 27px;
+    --font-size-400: 30px;
+    --font-size-500: 43px;
+    --font-size-600: 55px;
+    --font-size-700: 200px;
+
+    /*
+     * Nav
+     */
+    --nav-height: 70px;
+
+    /*
+     * Spacer
+     */
     --spacer-200: 15px;
     --spacer-300: 20px;
     --spacer-400: 30px;
     --spacer-500: 40px;
     --spacer-600: 80px;
+
+    /*
+     * Container
+     */
+    --container: 620px;
+    --container-message: 500px;
+
+    /*
+     * Content
+     */
+    --content-card-padding: 70px;
+  }
+}
+
+/* mobile standard */
+@media only screen and (max-width: 767px) {
+  :root {
+    /*
+     * Fonts
+     */
+    --font-size-100: 11px;
+    --font-size-200: 12px;
+    --font-size-250: 16px;
+    --font-size-300: 20px;
+    --font-size-350: 22px;
+    --font-size-400: 26px;
+    --font-size-500: 36px;
+    --font-size-600: 42px;
+    --font-size-700: 150px;
+
+    /*
+     * Nav
+     */
+    --nav-height: 60px;
+
+    /*
+     * Container
+     */
+    --container: 80%;
+    --container-message: 70%;
+
+    /*
+      * Content
+      */
+    --content-card-padding: 20px;
+  }
+}
+
+/* mobile small */
+@media only screen and (max-width: 584px) {
+  :root {
+    /*
+     * Fonts
+     */
+    --font-size-100: 11px;
+    --font-size-200: 12px;
+    --font-size-250: 13px;
+    --font-size-300: 14px;
+    --font-size-350: 16px;
+    --font-size-400: 18px;
+    --font-size-500: 28px;
+    --font-size-600: 32px;
+    --font-size-700: 70px;
+
+    /*
+     * Nav
+     */
+    --nav-height: 55px;
+
+    /*
+     * Container
+     */
+    --container: 70%;
+    --container-message: 70%;
+
+    /*
+      * Content
+      */
+    --content-card-padding: 20px;
   }
 }
 
@@ -350,10 +439,5 @@ p {
 
 .container {
   margin: 0 auto;
-  width: var(--container-desktop);
-}
-@media only screen and (max-width: var(--breakpoint-tablet)) {
-  .container {
-    width: var(--container-desktop-mobile);
-  }
+  width: var(--container);
 }
