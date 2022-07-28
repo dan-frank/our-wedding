@@ -92,7 +92,7 @@ const HomeRoute = () => {
                         text:
                           "A collection of our favourite images from the morning " +
                           "all the way through to the embarrassing evening.",
-                        url: "/gallery.html",
+                        url: "/gallery",
                       },
                       {
                         image: {
