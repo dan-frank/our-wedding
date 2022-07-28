@@ -76,3 +76,9 @@
   background: var(--color-light-background);
   cursor: pointer;
 }
+
+@media only screen and (max-width: 584px) {
+  .banner-container .banner-circle-container {
+    width: 80%;
+  }
+}
