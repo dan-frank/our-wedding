@@ -252,13 +252,13 @@
     /*
      * Container
      */
-    --container: 700px;
+    --container: 620px;
     --container-message: 500px;
 
     /*
      * Content
      */
-    --content-card-padding: 30px;
+    --content-card-padding: 70px;
   }
 }
 

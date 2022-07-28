@@ -10,7 +10,7 @@ const ContentCard = ({ title, children }) => {
     <div className="content-card">
       <div className="container">
         {title_html}
-        <div className="container">{children}</div>
+        {children}
       </div>
     </div>
   );
