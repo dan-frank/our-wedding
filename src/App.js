@@ -1,4 +1,9 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  NavLink,
+} from "react-router-dom";
 import "normalize.css";
 
 import HomeRoute from "./routes/Home";
@@ -12,7 +17,7 @@ function App() {
         <Nav />
         <Routes>
           <Route exact path="/" element={<HomeRoute />}></Route>
-          <Route exact path="/gallery" element={<GalleryRoute />}></Route>
+          <Route exact path="gallery" element={<GalleryRoute />}></Route>
         </Routes>
       </div>
     </Router>
