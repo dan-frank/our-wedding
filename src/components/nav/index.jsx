@@ -19,8 +19,7 @@ const Nav = () => {
               <NavLink
                 to="/"
                 className={({ isActive }) =>
-                  "nav__link font-dark" +
-                  (isActive ? " nav__link--active" : null)
+                  "nav__link font-dark" + (isActive ? " nav__link--active" : "")
                 }
               >
                 Home
@@ -30,8 +29,7 @@ const Nav = () => {
               <NavLink
                 to="gallery"
                 className={({ isActive }) =>
-                  "nav__link font-dark" +
-                  (isActive ? " nav__link--active" : null)
+                  "nav__link font-dark" + (isActive ? " nav__link--active" : "")
                 }
               >
                 Gallery
