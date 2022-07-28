@@ -1,0 +1,10 @@
+.content-card {
+  position: relative;
+  z-index: 5;
+  width: calc(var(--container) + (var(--content-card-padding) * 2));
+  margin: 0 auto;
+  background: var(--color-white-background);
+  padding-top: var(--content-card-padding);
+  padding-bottom: var(--content-card-padding);
+  position: relative;
+}

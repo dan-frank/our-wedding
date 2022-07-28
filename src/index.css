@@ -1,0 +1,443 @@
+:root {
+  /*
+   * Colours
+   */
+  --color-greyscale-50: #ffffffff;
+  --color-greyscale-100: #e5e5eaff;
+  --color-greyscale-200: #d1d1d6ff;
+  --color-greyscale-300: #c7c7ccff;
+  --color-greyscale-400: #aeaeb2ff;
+  --color-greyscale-500: #8e8e93ff;
+  --color-greyscale-600: #8e8e93ff;
+  --color-greyscale-700: #636366ff;
+  --color-greyscale-800: #48484aff;
+  --color-greyscale-800-rgb: 0, 0, 0;
+  --color-greyscale-900: #3a3a3cff;
+  --color-greyscale-900-rgb: 31, 41, 51;
+  --color-greyscale-950: #2c2c2eff;
+  --color-greyscale-1000: #1c1c1eff;
+  --color-greyscale-1000-rgb: 28, 28, 30;
+  --color-greyscale-1100: #131314ff;
+  --color-greyscale-1200: #000316ff;
+
+  --color-beige-200: #f1e8d9;
+
+  --color-blue-100: #b9d6f3;
+  --color-blue-200: #a1c9f1;
+  --color-blue-300: #007affff;
+  --color-blue-400: #0a84ffff;
+  --color-blue-500: #052d61ff;
+  --color-blue-600: #031226ff;
+
+  --color-green-300: #34c759ff;
+  --color-green-400: #30d158ff;
+
+  --color-indigo-300: #5856d6ff;
+  --color-indigo-400: #5e5ce6ff;
+
+  --color-orange-300: #ff9500ff;
+  --color-orange-400: #ff9f0aff;
+
+  --color-pink-100: #e1daf8;
+  --color-pink-100-rgb: 225, 218, 248;
+  --color-pink-200: #f8dae9;
+  --color-pink-300: #f4c2d7;
+  --color-pink-400: #efb0c9;
+  --color-pink-500: #e686ac;
+
+  --color-purple-300: #af52deff;
+  --color-purple-400: #bf5af2ff;
+
+  --color-red-300: #ff3b30ff;
+  --color-red-400: #ff453aff;
+
+  --color-teal-300: #5ac8faff;
+  --color-teal-400: #64d2ffff;
+
+  --color-yellow-300: #ffcc00ff;
+  --color-yellow-400: #ffd60aff;
+
+  /*
+   * Access colours
+   */
+  --color-primary-background: var(--color-blue-300);
+  --color-primary-hover: var(--color-blue-400);
+  --color-primary-text: var(--color-greyscale-50);
+
+  --color-secondary-background: var(--color-pink-400);
+  --color-secondary-hover: var(--color-pink-500);
+  --color-secondary-text: var(--color-greyscale-50);
+
+  --color-white-background: var(--color-greyscale-50);
+  --color-white-hover: var(--color-greyscale-100);
+  --color-white-text: var(--color-blue-300);
+
+  --color-light-background: var(--color-greyscale-100);
+  --color-light-hover: var(--color-greyscale-300);
+  --color-light-text: var(--color-blue-300);
+
+  --color-grey-background: var(--color-greyscale-1100);
+  --color-grey-hover: var(--color-greyscale-900);
+  --color-grey-text: var(--color-blue-300);
+
+  --color-dark-background: var(--color-greyscale-1200);
+  --color-dark-hover: var(--color-greyscale-1000);
+  --color-dark-text: var(--color-blue-300);
+
+  --color-confirm-background: var(--color-green-300);
+  --color-confirm-hover: var(--color-green-400);
+  --color-confirm-text: var(--color-greyscale-50);
+
+  --color-warning-background: var(--color-yellow-300);
+  --color-warning-hover: var(--color-yellow-400);
+  --color-warning-text: var(--color-greyscale-800);
+
+  --color-danger-background: var(--color-red-300);
+  --color-danger-hover: var(--color-red-400);
+  --color-danger-text: var(--color-greyscale-50);
+
+  --color-help-background: var(--color-purple-300);
+  --color-help-hover: var(--color-purple-400);
+  --color-help-text: var(--color-greyscale-50);
+
+  --gradient-blue-pink: linear-gradient(
+    180deg,
+    var(--color-blue-100) 0%,
+    var(--color-pink-100) 100%
+  );
+  --gradient-pink-blue: linear-gradient(
+    0,
+    var(--color-blue-100) 0%,
+    var(--color-pink-100) 100%
+  );
+
+  /*
+   * Radius
+   */
+  --radius-small: 4px;
+  --radius: 8px;
+  --radius-large: 12px;
+  --radius-rounded: 99999999px;
+
+  /*
+   * Aspect
+   */
+  --aspect-16by9: 56.25%;
+  --aspect-4by3: 75%;
+  --aspect-3by2: 66.66%;
+  --aspect-8by5: 62.5%;
+
+  /*
+   * Fonts
+   */
+  --font-serif-1: "Lora", serif;
+  --font-serif-2: "Great Vibes", serif;
+  --font-sans-serif: "Open Sans", sans-serif;
+
+  --font-size-100: 11px;
+  --font-size-200: 14px;
+  --font-size-250: 20px;
+  --font-size-300: 24px;
+  --font-size-350: 30px;
+  --font-size-400: 36px;
+  --font-size-500: 58px;
+  --font-size-600: 68px;
+  --font-size-700: 300px;
+
+  /*
+   * Nav
+   */
+  --nav-height: 80px;
+
+  /*
+   * Container
+   */
+  --container: 950px;
+  --container-message: 800px;
+
+  /*
+   * Content
+   */
+  --content-card-padding: 70px;
+
+  /*
+   * Transition
+   */
+  --transition-100: 0.15s;
+  --transition-200: 0.2s;
+
+  /*
+   * Spacer
+   */
+  --spacer-200: 60px;
+  --spacer-300: 80px;
+  --spacer-400: 120px;
+  --spacer-500: 160px;
+  --spacer-600: 200px;
+}
+
+/* tablet */
+@media only screen and (max-width: 1200px) {
+  :root {
+    /*
+     * Fonts
+     */
+    --font-size-100: 11px;
+    --font-size-200: 14px;
+    --font-size-250: 20px;
+    --font-size-300: 24px;
+    --font-size-350: 28px;
+    --font-size-400: 33px;
+    --font-size-500: 45px;
+    --font-size-600: 60px;
+    --font-size-700: 250px;
+
+    /*
+     * Nav
+     */
+    --nav-height: 75px;
+
+    /*
+     * Container
+     */
+    --container: 800px;
+    --container-message: 650px;
+
+    /*
+     * Content
+     */
+    --content-card-padding: 50px;
+
+    /*
+     * Spacer
+     */
+    --spacer-200: 30px;
+    --spacer-300: 55px;
+    --spacer-400: 65px;
+    --spacer-500: 80px;
+    --spacer-600: 120px;
+  }
+}
+
+/* mobile large */
+@media only screen and (max-width: 930px) {
+  :root {
+    /*
+     * Fonts
+     */
+    --font-size-100: 11px;
+    --font-size-200: 14px;
+    --font-size-250: 18px;
+    --font-size-300: 22px;
+    --font-size-350: 27px;
+    --font-size-400: 30px;
+    --font-size-500: 43px;
+    --font-size-600: 55px;
+    --font-size-700: 200px;
+
+    /*
+     * Nav
+     */
+    --nav-height: 70px;
+
+    /*
+     * Spacer
+     */
+    --spacer-200: 15px;
+    --spacer-300: 20px;
+    --spacer-400: 30px;
+    --spacer-500: 40px;
+    --spacer-600: 80px;
+
+    /*
+     * Container
+     */
+    --container: 620px;
+    --container-message: 500px;
+
+    /*
+     * Content
+     */
+    --content-card-padding: 70px;
+  }
+}
+
+/* mobile standard */
+@media only screen and (max-width: 767px) {
+  :root {
+    /*
+     * Fonts
+     */
+    --font-size-100: 11px;
+    --font-size-200: 12px;
+    --font-size-250: 16px;
+    --font-size-300: 20px;
+    --font-size-350: 22px;
+    --font-size-400: 26px;
+    --font-size-500: 36px;
+    --font-size-600: 42px;
+    --font-size-700: 150px;
+
+    /*
+     * Nav
+     */
+    --nav-height: 60px;
+
+    /*
+     * Container
+     */
+    --container: 80%;
+    --container-message: 70%;
+
+    /*
+      * Content
+      */
+    --content-card-padding: 20px;
+  }
+}
+
+/* mobile small */
+@media only screen and (max-width: 584px) {
+  :root {
+    /*
+     * Fonts
+     */
+    --font-size-100: 11px;
+    --font-size-200: 12px;
+    --font-size-250: 13px;
+    --font-size-300: 14px;
+    --font-size-350: 16px;
+    --font-size-400: 18px;
+    --font-size-500: 28px;
+    --font-size-600: 32px;
+    --font-size-700: 70px;
+
+    /*
+     * Nav
+     */
+    --nav-height: 55px;
+
+    /*
+     * Container
+     */
+    --container: 70%;
+    --container-message: 70%;
+
+    /*
+      * Content
+      */
+    --content-card-padding: 20px;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--color-light-background);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.font-serif-1 {
+  font-family: var(--font-serif-1);
+  margin: 0;
+}
+
+.font-serif-2 {
+  font-family: var(--font-serif-2);
+  margin: 0;
+}
+
+.font-sans-serif {
+  font-family: var(--font-sans-serif);
+  margin: 0;
+  letter-spacing: 2.08px;
+  text-transform: uppercase;
+}
+
+.font-size-100 {
+  font-size: var(--font-size-100);
+}
+
+.font-size-200 {
+  font-size: var(--font-size-200);
+}
+
+.font-size-300 {
+  font-size: var(--font-size-300);
+}
+
+.font-size-350 {
+  font-size: var(--font-size-350);
+}
+
+.font-size-400 {
+  font-size: var(--font-size-400);
+}
+
+.font-size-500 {
+  font-size: var(--font-size-500);
+}
+
+.font-size-600 {
+  font-size: var(--font-size-600);
+}
+
+.font-size-700 {
+  font-size: var(--font-size-700);
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  font-family: var(--font-sans-serif);
+}
+
+body,
+p {
+  font-size: var(--font-size-100);
+}
+
+.font-light {
+  color: var(--color-light-background);
+}
+
+.font-dark {
+  color: var(--color-dark-backround);
+}
+
+.font-pink-200 {
+  color: var(--color-pink-200);
+}
+
+.font-pink-300 {
+  color: var(--color-pink-300);
+}
+
+.font-shadow {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.16);
+}
+
+.font-center {
+  text-align: center;
+}
+
+.font-transform-none {
+  text-transform: none;
+}
+
+.container {
+  margin: 0 auto;
+  width: var(--container);
+}

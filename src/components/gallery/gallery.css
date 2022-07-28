@@ -1,0 +1,16 @@
+.images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  position: relative;
+}
+@media only screen and (max-width: 767px) {
+  .images {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 584px) {
+  .images {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

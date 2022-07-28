@@ -1,0 +1,18 @@
+.spacer {
+  width: 100%;
+}
+.spacer--200 {
+  height: var(--spacer-200);
+}
+.spacer--300 {
+  height: var(--spacer-300);
+}
+.spacer--400 {
+  height: var(--spacer-400);
+}
+.spacer--500 {
+  height: var(--spacer-500);
+}
+.spacer--600 {
+  height: var(--spacer-600);
+}
