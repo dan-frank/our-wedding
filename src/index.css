@@ -180,14 +180,6 @@
   --spacer-400: 120px;
   --spacer-500: 160px;
   --spacer-600: 200px;
-
-  /*
-   * Media Queries
-   */
-  --breakpoint-tablet: 1200px;
-  --breakpoint-mobile: 900px;
-  --breakpoint-mobile-md: 767px;
-  --breakpoint-mobile-sml: 584px;
 }
 
 /* tablet */
