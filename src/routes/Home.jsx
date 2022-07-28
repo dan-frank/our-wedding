@@ -20,7 +20,7 @@ const HomeRoute = () => {
           <>
             <Banner
               image={{
-                url: "/images/kiss-small.jpg",
+                url: process.env.PUBLIC_URL + "/images/kiss-small.jpg",
                 alt: "Bride and groom kiss",
               }}
               title="The Perfect Day"
@@ -33,7 +33,7 @@ const HomeRoute = () => {
                   <Spacer size={300} />
                   <CoupleHighlight
                     initials="BL"
-                    image="images/becca-small.jpg"
+                    image={process.env.PUBLIC_URL + "/images/becca-small.jpg"}
                     title="bride"
                     name="Becca Lucas"
                     button={
@@ -47,7 +47,7 @@ const HomeRoute = () => {
                   <Spacer size={500} />
                   <CoupleHighlight
                     initials="DL"
-                    image="images/dan-small.jpg"
+                    image={process.env.PUBLIC_URL + "/images/dan-small.jpg"}
                     title="groom"
                     name="Daniel Lucas"
                   />
@@ -59,7 +59,7 @@ const HomeRoute = () => {
       />
 
       <ImageBanner
-        url="images/stairs.jpg"
+        url={process.env.PUBLIC_URL + "/images/stairs.jpg"}
         alt="Bride and groom walking down the stairs"
         size="is-16by9"
       />
@@ -85,7 +85,8 @@ const HomeRoute = () => {
                     cards={[
                       {
                         image: {
-                          url: "images/group1-small.jpg",
+                          url:
+                            process.env.PUBLIC_URL + "/images/group1-small.jpg",
                           alt: "Bride, groom, groom's family and bridesmaids",
                         },
                         title: "Our Gallery",
@@ -96,7 +97,8 @@ const HomeRoute = () => {
                       },
                       {
                         image: {
-                          url: "images/venue-small.jpg",
+                          url:
+                            process.env.PUBLIC_URL + "/images/venue-small.jpg",
                           alt: "The entrance to farnham castle",
                         },
                         title: "The Venue",
@@ -108,7 +110,8 @@ const HomeRoute = () => {
                       },
                       {
                         image: {
-                          url: "images/food1-small.jpg",
+                          url:
+                            process.env.PUBLIC_URL + "/images/food1-small.jpg",
                           alt: "Picture of a desert served on the night",
                         },
                         title: "The Menu",
@@ -120,7 +123,8 @@ const HomeRoute = () => {
                       },
                       {
                         image: {
-                          url: "images/group2-small.jpg",
+                          url:
+                            process.env.PUBLIC_URL + "/images/group2-small.jpg",
                           alt: "Bride, groom, groom's family and bridesmaids",
                         },
                         title: "The Guest List",
