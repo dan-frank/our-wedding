@@ -166,13 +166,6 @@
   --transition-100: 0.2s;
 
   /*
-   * Margin
-   */
-
-  --margin-100: 10px;
-  --margin-300: 40px;
-
-  /*
    * Spacer
    */
   --spacer-200: 60px;
@@ -197,6 +190,11 @@
     --font-size-500: 45px;
     --font-size-600: 60px;
     --font-size-700: 250px;
+
+    /*
+     * Nav
+     */
+    --nav-height: 75px;
 
     /*
      * Container
@@ -237,6 +235,11 @@
     --font-size-700: 200px;
 
     /*
+     * Nav
+     */
+    --nav-height: 70px;
+
+    /*
      * Spacer
      */
     --spacer-200: 15px;
@@ -275,6 +278,11 @@
     --font-size-700: 150px;
 
     /*
+     * Nav
+     */
+    --nav-height: 60px;
+
+    /*
      * Container
      */
     --container: 80%;
@@ -290,6 +298,24 @@
 /* mobile small */
 @media only screen and (max-width: 584px) {
   :root {
+    /*
+     * Fonts
+     */
+    --font-size-100: 11px;
+    --font-size-200: 12px;
+    --font-size-250: 13px;
+    --font-size-300: 14px;
+    --font-size-350: 16px;
+    --font-size-400: 18px;
+    --font-size-500: 28px;
+    --font-size-600: 32px;
+    --font-size-700: 70px;
+
+    /*
+     * Nav
+     */
+    --nav-height: 55px;
+
     /*
      * Container
      */
