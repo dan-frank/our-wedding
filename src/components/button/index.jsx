@@ -3,9 +3,9 @@ import "./button.css";
 
 import { Link } from "react-router-dom";
 
-const Button = ({ text, url, modifiers, blank }) => {
+const Button = ({ text, url, modifiers }) => {
   if (url) {
-    if (blank) {
+    if (url.pathname) {
       return (
         <Link to={url} className={modifiers} target="_blank" rel="noreferrer">
           {text}

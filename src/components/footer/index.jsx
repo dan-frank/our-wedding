@@ -19,7 +19,7 @@ const Footer = () => {
               <BsGithub /> GitHub
             </>
           }
-          url="https://github.com/dan-frank/our_wedding"
+          url={{ pathname: "https://github.com/dan-frank/our_wedding" }}
           modifiers="button button--link"
           blank={true}
         />
